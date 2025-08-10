@@ -102,24 +102,6 @@ All colors MUST be HSL.
     --brand-foreground: 0 0% 100%;
   }
 
-  /* Brand preview palettes */
-  :root[data-brand="emerald"] {
-    --brand: 142 72% 40%;
-    --brand-2: 164 60% 45%;
-  }
-  :root[data-brand="teal"] {
-    --brand: 170 80% 38%;
-    --brand-2: 158 64% 45%;
-  }
-  /* Scoped previews for side-by-side demo */
-  [data-brand="emerald"] {
-    --brand: 142 72% 40%;
-    --brand-2: 164 60% 45%;
-  }
-  [data-brand="teal"] {
-    --brand: 170 80% 38%;
-    --brand-2: 158 64% 45%;
-  }
 }
 
 @layer base {
