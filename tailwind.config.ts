@@ -61,7 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				brand: {
+					DEFAULT: 'hsl(var(--brand))',
+					foreground: 'hsl(var(--brand-foreground))'
+				},
+				"brand-2": {
+					DEFAULT: 'hsl(var(--brand-2))'
 				}
+			},
+			fontFamily: {
+				sans: [
+					'\"Sora\"',
+					'ui-sans-serif',
+					'system-ui',
+					'-apple-system',
+					'\"Segoe UI\"',
+					'Roboto',
+					'Ubuntu',
+					'\"Helvetica Neue\"',
+					'Arial',
+					'\"Noto Sans\"',
+					'sans-serif'
+				]
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
