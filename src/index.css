@@ -48,8 +48,8 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Brand tokens */
-    --brand: 252 92% 60%;          /* Electric indigo */
-    --brand-2: 292 84% 61%;        /* Vivid orchid */
+    --brand: 170 80% 38%;          /* Teal primary */
+    --brand-2: 158 64% 45%;        /* Teal secondary */
     --brand-foreground: 0 0% 100%; /* White for contrast */
 
     /* Motion tokens */
@@ -97,8 +97,8 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --brand: 252 92% 60%;
-    --brand-2: 292 84% 61%;
+    --brand: 170 80% 38%;
+    --brand-2: 158 64% 45%;
     --brand-foreground: 0 0% 100%;
   }
 
