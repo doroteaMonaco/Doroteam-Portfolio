@@ -12,19 +12,19 @@ export const About = () => {
         <div className="grid grid-cols-2 gap-4">
           <div className="glass rounded-lg p-4">
             <p className="font-medium">Frontend</p>
-            <p className="text-sm text-muted-foreground">React, TypeScript, Tailwind</p>
+            <p className="text-sm text-muted-foreground">React, TypeScript, HTML, CSS</p>
           </div>
           <div className="glass rounded-lg p-4">
             <p className="font-medium">Backend</p>
-            <p className="text-sm text-muted-foreground">Node, Supabase, REST</p>
-          </div>
-          <div className="glass rounded-lg p-4">
-            <p className="font-medium">Architecture</p>
-            <p className="text-sm text-muted-foreground">Clean code, testing, DX</p>
+            <p className="text-sm text-muted-foreground">Node.js, Express, REST API, MySQL</p>
           </div>
           <div className="glass rounded-lg p-4">
             <p className="font-medium">DevOps</p>
-            <p className="text-sm text-muted-foreground">CI/CD, monitoring</p>
+            <p className="text-sm text-muted-foreground">Docker, Git, CI/CD</p>
+          </div>
+          <div className="glass rounded-lg p-4">
+            <p className="font-medium">Testing</p>
+            <p className="text-sm text-muted-foreground">Jest, Unit & Integration Testing</p>
           </div>
         </div>
       </div>

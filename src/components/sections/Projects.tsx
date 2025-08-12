@@ -1,6 +1,5 @@
-import analyticsImg from "@/assets/projects/project-analytics.jpg";
-import geocontrolImg from "/assets/projects/Gemini_Generated_Image_2bq66x2bq66x2bq6.png";
-import misfortuneImg from "@/assets/projects/Gemini_Generated_Image_tlqh68tlqh68tlqh.png";
+import geocontrolImg from "@/assets/projects/geocontrol.png";
+import misfortuneImg from "@/assets/projects/misfortune.png";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
@@ -13,9 +12,7 @@ const projects = [
   },
   {
     title: "GeoControl Software",
-  description: `GeoControl is a software system designed for monitoring physical and environmental variables in various contexts: from hydrogeological analyses of mountain areas to the surveillance of historical buildings, and even the control of internal parameters (such as temperature or lighting) in residential or working environments.  
-  It was commissioned by the Union of Mountain Communities of the Piedmont region for managing the hydrogeological state of its territories. However, thanks to its modular structure, GeoControl has also been commercialized to different public or private entities requiring continuous monitoring of physical parameters.  
-  The system meets high reliability requirements and must ensure that no more than six measurements per year, per sensor, are lost. From an organizational perspective, GeoControl uses a token-based authentication mechanism, with different user roles to regulate access levels to the functionalities.`,
+  description: `GeoControl is a software system designed for monitoring physical and environmental variables in various contexts: from hydrogeological analyses of mountain areas to the surveillance of historical buildings, and even the control of internal parameters (such as temperature or lighting) in residential or working environments.`,
   image: geocontrolImg, 
   tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
   link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
