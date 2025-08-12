@@ -29,20 +29,28 @@ export const Projects = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((p) => (
-            <article key={p.title} className="group rounded-xl border border-border overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300 will-change-transform hover:-translate-y-1">
-              <div className="aspect-[16/10] overflow-hidden bg-muted">
-                <img src={p.image} alt={`${p.title} screenshot`} loading="lazy" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
-              </div>
-              <div className="p-5">
-                <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{p.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {p.tech.map((t) => (
-                    <Badge key={t} variant="secondary">{t}</Badge>
-                  ))}
+            <a
+              key={p.title}
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group rounded-xl border border-border overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300 will-change-transform hover:-translate-y-1"
+            >
+              <article>
+                <div className="aspect-[16/10] overflow-hidden bg-muted">
+                  <img src={p.image} alt={`${p.title} screenshot`} loading="lazy" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
                 </div>
-              </div>
-            </article>
+                <div className="p-5">
+                  <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{p.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {p.tech.map((t) => (
+                      <Badge key={t} variant="secondary">{t}</Badge>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            </a>
           ))}
         </div>
       </div>
