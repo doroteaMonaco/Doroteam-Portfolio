@@ -19,11 +19,11 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contact</h2>
-        <p className="text-muted-foreground max-w-2xl mb-8">Interested in working together? Send a message — I’ll reply within 24 hours.</p>
-        <form onSubmit={send} className="max-w-xl grid gap-4">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">Contact</h2>
+  <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mb-8">Interested in working together? Send a message — I’ll reply within 24 hours.</p>
+  <form onSubmit={send} className="w-full max-w-xl grid gap-4 mx-auto">
           <div>
             <label className="block text-sm mb-2" htmlFor="name">Name</label>
             <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required />
@@ -37,7 +37,7 @@ export const Contact = () => {
             <Textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Hi! I'd like to discuss..." rows={5} required />
           </div>
           <div>
-            <Button type="submit" variant="gradient" className="w-full md:w-auto">Send message</Button>
+            <Button type="submit" variant="gradient" className="w-full">Send message</Button>
           </div>
         </form>
       </div>
