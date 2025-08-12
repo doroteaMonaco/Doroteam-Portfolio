@@ -21,12 +21,8 @@ export const Hero = () => {
         <div className="max-w-3xl">
           <p className="text-sm tracking-wide text-muted-foreground mb-3">AVAILABLE FOR HIRING</p>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Software Engineer crafting
-            <span className="block text-gradient">reliable, scalable products.</span>
+            Dorotea Monaco Software Engineer
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground">
-            I design, build, and ship performant web apps end-to-end — from clean architecture to delightful UI.
-          </p>
           <div className="mt-8 flex items-center gap-3">
             <a href="#projects"><Button variant="gradient" size="lg">View Projects</Button></a>
             <a href="#contact"><Button variant="secondary" size="lg">Get in touch</Button></a>

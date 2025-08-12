@@ -17,7 +17,7 @@ export const SiteHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <a href="#home" className="flex items-center gap-2 font-semibold">
-            <span className="text-gradient">Your Name</span>
+            <span className="text-gradient">Dorotea Monaco</span>
             <span className="sr-only">Home</span>
           </a>
 
