@@ -29,7 +29,7 @@ export const Hero = () => {
           <div className="mt-8 flex items-center gap-3">
             <a href="#projects"><Button variant="gradient" size="lg">View Projects</Button></a>
             <a href="#contact"><Button variant="secondary" size="lg">Get in touch</Button></a>
-            <a href="/cv.pdf" download><Button variant="outline" size="lg">Download CV</Button></a>
+            <a href="/cv.pdf" download><Button variant="secondary" size="lg">Download CV</Button></a>
           </div>
         </div>
       </div>
