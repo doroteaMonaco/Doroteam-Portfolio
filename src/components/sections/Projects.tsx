@@ -1,8 +1,6 @@
 import analyticsImg from "@/assets/projects/project-analytics.jpg";
-import geocontrolImg from "@/assets/projects/geocontrol-dashboard.jpg";
-import misfortuneImg from "@/assets/projects/misfortune-card.jpg";
-import kanbanImg from "@/assets/projects/project-kanban.jpg";
-import integrationsImg from "@/assets/projects/project-integrations.jpg";
+import geocontrolImg from "/assets/projects/Gemini_Generated_Image_2bq66x2bq66x2bq6.png";
+import misfortuneImg from "@/assets/projects/Gemini_Generated_Image_tlqh68tlqh68tlqh.png";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
