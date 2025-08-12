@@ -23,6 +23,9 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Dorotea Monaco Software Engineer
           </h1>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
+            Passionate about software development, with a strong interest in building modern web and mobile applications. Always eager to learn new technologies and create impactful digital experiences.
+          </p>
           <div className="mt-8 flex items-center gap-3">
             <a href="#projects"><Button variant="gradient" size="lg">View Projects</Button></a>
             <a href="#contact"><Button variant="secondary" size="lg">Get in touch</Button></a>
