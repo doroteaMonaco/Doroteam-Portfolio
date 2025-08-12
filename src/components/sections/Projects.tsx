@@ -1,26 +1,26 @@
 import analyticsImg from "@/assets/projects/project-analytics.jpg";
+import geocontrolImg from "@/assets/projects/geocontrol-dashboard.jpg";
+import misfortuneImg from "@/assets/projects/misfortune-card.jpg";
 import kanbanImg from "@/assets/projects/project-kanban.jpg";
 import integrationsImg from "@/assets/projects/project-integrations.jpg";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "Analytics Dashboard",
-    description: "Full-stack metrics platform with real-time charts and role-based access.",
-    image: analyticsImg,
-    tech: ["React", "TypeScript", "Recharts"],
+    title: "Misfortune Game",
+    description: "A game built with JavaScript, React, Node, and Express. Each card has a 'misfortune index' and the user must guess the correct index. Features a dynamic UI and engaging logic.",
+  image: misfortuneImg,
+    link: "https://github.com/doroteaMonaco/Misfortune-Game-Web-App-1",
+    tech: ["JavaScript", "React", "Node.js", "Express"],
   },
   {
-    title: "Kanban Manager",
-    description: "Drag-and-drop task manager with persistence and offline support.",
-    image: kanbanImg,
-    tech: ["React", "Zustand", "Tailwind"],
-  },
-  {
-    title: "API Integrations Hub",
-    description: "Unified interface for multiple third-party services and webhooks.",
-    image: integrationsImg,
-    tech: ["Node", "Supabase", "Webhooks"],
+    title: "GeoControl Software",
+  description: `GeoControl is a software system designed for monitoring physical and environmental variables in various contexts: from hydrogeological analyses of mountain areas to the surveillance of historical buildings, and even the control of internal parameters (such as temperature or lighting) in residential or working environments.  
+  It was commissioned by the Union of Mountain Communities of the Piedmont region for managing the hydrogeological state of its territories. However, thanks to its modular structure, GeoControl has also been commercialized to different public or private entities requiring continuous monitoring of physical parameters.  
+  The system meets high reliability requirements and must ensure that no more than six measurements per year, per sensor, are lost. From an organizational perspective, GeoControl uses a token-based authentication mechanism, with different user roles to regulate access levels to the functionalities.`,
+  image: geocontrolImg,
+  tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
+  link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
   },
 ];
 
