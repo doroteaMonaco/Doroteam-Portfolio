@@ -40,7 +40,7 @@ export const SiteHeader = () => {
               <Mail className="h-5 w-5" />
             </a>
             <a href="#contact">
-              <Button variant="gradient" size="sm">Contact Me</Button>
+              <Button variant="gradient" size="sm">💼 Hire Me</Button>
             </a>
           </div>
 
@@ -62,7 +62,7 @@ export const SiteHeader = () => {
                 </a>
               ))}
               <a href="#contact" onClick={() => setOpen(false)}>
-                <Button className="w-full mt-2" variant="gradient">Contact Me</Button>
+                <Button className="w-full mt-2" variant="gradient">💼 Hire Me</Button>
               </a>
             </nav>
           </div>

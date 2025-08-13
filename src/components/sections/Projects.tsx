@@ -5,17 +5,19 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     title: "Misfortune Game",
-    description: "A game built with JavaScript, React, Node, and Express. Each card has a 'misfortune index' and the user must guess the correct index. Features a dynamic UI and engaging logic.",
-  image: misfortuneImg,
+    description: "Interactive web game with dynamic scoring system. Features real-time card evaluation, responsive UI, and engaging game mechanics. Built with full-stack architecture supporting multiple concurrent players.",
+    metrics: "🎯 Responsive design • 🚀 Real-time updates • 🎮 Interactive gameplay",
+    image: misfortuneImg,
     link: "https://github.com/doroteaMonaco/Misfortune-Game-Web-App-1",
     tech: ["JavaScript", "React", "Node.js", "Express"],
   },
   {
     title: "GeoControl Software",
-  description: `GeoControl is a software system designed for monitoring physical and environmental variables in various contexts: from hydrogeological analyses of mountain areas to the surveillance of historical buildings, and even the control of internal parameters (such as temperature or lighting) in residential or working environments.`,
-  image: geocontrolImg, 
-  tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
-  link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
+    description: "Enterprise monitoring system for environmental data collection. Handles real-time sensor data processing, automated alerts, and comprehensive reporting for critical infrastructure monitoring.",
+    metrics: "📊 Real-time monitoring • 🔔 Automated alerts • 🏗️ Scalable architecture",
+    image: geocontrolImg, 
+    tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
+    link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
   },
 ];
 
@@ -42,7 +44,8 @@ export const Projects = () => {
                 </div>
                 <div className="p-4 sm:p-5">
                   <h3 className="text-lg sm:text-xl font-semibold mb-2">{p.title}</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground mb-4">{p.description}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-3">{p.description}</p>
+                  <p className="text-xs text-blue-600 dark:text-blue-400 mb-4 font-medium">{p.metrics}</p>
                   <div className="flex flex-wrap gap-2">
                     {p.tech.map((t) => (
                       <Badge key={t} variant="secondary">{t}</Badge>

@@ -19,12 +19,13 @@ export const Hero = () => {
       />
       <div className="container mx-auto px-4 pt-16 pb-12 md:pt-24 md:pb-20" onMouseMove={handleMove}>
         <div className="max-w-3xl mx-auto">
-          <p className="text-sm tracking-wide text-muted-foreground mb-3">AVAILABLE FOR HIRING</p>
+          <p className="text-sm tracking-wide text-muted-foreground mb-3">🟢 AVAILABLE FOR HIRING</p>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
-            Dorotea Monaco Software Engineer
+            Dorotea Monaco <span className="text-gradient">Software Engineer</span>
           </h1>
+          <p className="mt-2 text-lg font-medium text-foreground">React • TypeScript • Node.js • Politecnico di Torino</p>
           <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl">
-            Passionate about software development, with a strong interest in building modern web and mobile applications. Always eager to learn new technologies and create impactful digital experiences.
+            Computer Engineering student with hands-on experience in modern web technologies. Specialized in building scalable applications with React, Node.js, and cloud databases. Ready to contribute to innovative projects in dynamic tech teams.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-3 w-full">
             <a href="#projects" className="w-full sm:w-auto"><Button className="w-full sm:w-auto" variant="gradient" size="lg">View Projects</Button></a>
