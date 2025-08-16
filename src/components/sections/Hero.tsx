@@ -37,7 +37,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl font-medium text-foreground mb-4 opacity-90">
-              React • TypeScript • Node.js • Politecnico di Torino
+              Politecnico di Torino
             </p>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 
 const navItems = [
@@ -39,6 +40,7 @@ export const SiteHeader = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-3">
+              <ThemeToggle />
               <a 
                 href="https://github.com/doroteaMonaco" 
                 aria-label="GitHub" 
@@ -95,6 +97,7 @@ export const SiteHeader = () => {
               ))}
               
               <div className="flex items-center justify-center gap-3 py-4">
+                <ThemeToggle />
                 <a href="https://github.com/doroteaMonaco" aria-label="GitHub" className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 transition-all duration-300">
                   <Github className="h-5 w-5" />
                 </a>

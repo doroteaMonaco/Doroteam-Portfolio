@@ -11,15 +11,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEO
-        title="Your Name — Software Engineer Portfolio"
-        description="Portfolio of a software engineer: projects, skills, and contact information."
+        title="Dorotea Monaco — Software Engineer Portfolio"
+        description="Portfolio di Dorotea Monaco, ingegnere software: progetti innovativi, competenze tecniche e informazioni di contatto."
         person={{
-          name: "Your Name",
+          name: "Dorotea Monaco",
           jobTitle: "Software Engineer",
-          email: "your.email@example.com",
+          email: "dorotea.monaco@gmail.com",
           sameAs: [
-            "https://github.com/",
-            "https://www.linkedin.com/",
+            "https://github.com/doroteaMonaco",
+            "https://www.linkedin.com/in/dorotea-monaco-0a0bba24a",
           ],
         }}
       />
