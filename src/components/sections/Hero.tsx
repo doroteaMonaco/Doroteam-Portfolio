@@ -45,7 +45,7 @@ export const Hero = () => {
               Specialized in modern tech stack with hands-on experience in scalable architecture and cloud solutions.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
               <a href="#projects" className="w-full sm:w-auto">
                 <Button variant="gradient" size="lg" className="w-full group">
                   <span>View My Work</span>
@@ -56,6 +56,14 @@ export const Hero = () => {
               </a>
               <a href="#contact" className="w-full sm:w-auto">
                 <Button variant="outline" size="lg" className="w-full">Let's Connect</Button>
+              </a>
+              <a href="/cv.pdf" download="Dorotea_Monaco_CV.pdf" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full group">
+                  <svg className="w-4 h-4 group-hover:translate-y-[-2px] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>Download CV</span>
+                </Button>
               </a>
             </div>
           </div>

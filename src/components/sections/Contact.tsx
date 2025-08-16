@@ -50,7 +50,7 @@ export const Contact = () => {
         setIsSuccess(true);
         toast({
           title: "✅ Message sent successfully!",
-          description: "I've received your message. I'll get back to you within 24 hours!",
+          description: "I've received your message and sent you a confirmation email. I'll get back to you within 24 hours!",
         });
         
         // Reset del form
