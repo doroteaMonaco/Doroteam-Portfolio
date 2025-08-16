@@ -3,19 +3,75 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/lib/supabaseClient";
+import { ContactForm, ContactResponse } from "@/types/contact";
+import { Mail, Send, CheckCircle } from "lucide-react";
 
 export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
-  const send = (e: React.FormEvent) => {
+  const npsend = async (e: React.FormEvent) => {
     e.preventDefault();
-    const to = "your.email@example.com";
-    const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-    const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-    toast({ title: "Opening your email app", description: "If it didn't open, please email your.email@example.com" });
+    setIsLoading(true);
+
+    const formData: ContactForm = {
+      name: name.trim(),
+      email: email.trim(),
+      message: message.trim(),
+    };
+
+    // Validazione base
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Error",
+        description: "All fields are required",
+        variant: "destructive",
+      });
+      setIsLoading(false);
+      return;
+    }
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      const response = data as ContactResponse;
+
+      if (response.success) {
+        setIsSuccess(true);
+        toast({
+          title: "✅ Message sent successfully!",
+          description: "I've received your message. I'll get back to you within 24 hours!",
+        });
+        
+        // Reset del form
+        setName("");
+        setEmail("");
+        setMessage("");
+        
+        // Reset success state dopo 5 secondi
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        throw new Error(response.message || "Error sending message");
+      }
+    } catch (error: any) {
+      toast({
+        title: "❌ Sending error",
+        description: error.message || "An error occurred. Please try again later or contact me directly at dorotea.monaco@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -23,7 +79,7 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
   <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">Contact</h2>
   <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mb-8">Interested in working together? Send a message — I’ll reply within 24 hours.</p>
-  <form onSubmit={send} className="w-full max-w-xl grid gap-4 mx-auto">
+  <form onSubmit={npsend} className="w-full max-w-xl grid gap-4 mx-auto">
           <div>
             <label className="block text-sm mb-2" htmlFor="name">Name</label>
             <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required />
@@ -37,7 +93,29 @@ export const Contact = () => {
             <Textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Hi! I'd like to discuss..." rows={5} required />
           </div>
           <div>
-            <Button type="submit" variant="gradient" className="w-full">Send message</Button>
+            <Button 
+              type="submit" 
+              variant="gradient" 
+              className="w-full" 
+              disabled={isLoading}
+            >
+              {isLoading ? (
+                <>
+                  <Mail className="mr-2 h-4 w-4 animate-spin" />
+                  Sending...
+                </>
+              ) : isSuccess ? (
+                <>
+                  <CheckCircle className="mr-2 h-4 w-4" />
+                  Message sent!
+                </>
+              ) : (
+                <>
+                  <Send className="mr-2 h-4 w-4" />
+                  Send message
+                </>
+              )}
+            </Button>
           </div>
         </form>
       </div>

@@ -15,7 +15,7 @@
     --popover: 20 16% 9%;
     --popover-foreground: 210 40% 96%;
 
-    --primary: 264 100% 75%;         /* Vibrant purple */
+    --primary: 142 76% 45%;          /* Forest green for dark theme */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 20 16% 12%;         /* Dark secondary */
@@ -32,88 +32,89 @@
 
     --border: 27 16% 18%;            /* Subtle border */
     --input: 27 16% 18%;
-    --ring: 264 100% 75%;
+    --ring: 142 76% 45%;             /* Green focus ring */
 
     --radius: 1rem;
 
     --sidebar-background: 20 16% 9%;
     --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 264 100% 75%;
+    --sidebar-primary: 142 76% 45%;  /* Forest green */
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 27 16% 18%;
     --sidebar-accent-foreground: 210 40% 96%;
     --sidebar-border: 27 16% 18%;
-    --sidebar-ring: 264 100% 75%;
+    --sidebar-ring: 142 76% 45%;
 
-    /* Professional Brand Colors */
-    --brand: 264 100% 75%;           /* Primary purple */
+    /* Professional Brand Colors - Now Green */
+    --brand: 142 76% 45%;            /* Primary forest green */
     --brand-secondary: 31 100% 71%;  /* Golden accent */
-    --brand-tertiary: 210 100% 70%;  /* Blue highlight */
+    --brand-tertiary: 158 64% 55%;   /* Emerald green */
     --brand-foreground: 0 0% 100%;
 
     /* Enhanced Motion & Effects */
     --transition-smooth: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-bounce: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
-    /* Professional Shadows */
+    /* Professional Shadows with green tint */
     --shadow-glow: 0 0 50px hsl(var(--brand) / 0.5);
     --shadow-elegant: 0 25px 50px -12px hsl(0 0% 0% / 0.6);
     --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
     --shadow-floating: 0 20px 40px hsl(0 0% 0% / 0.4);
 
-    /* Gradient definitions */
+    /* Gradient definitions - Now Green */
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-secondary)) 100%);
     --gradient-glow: radial-gradient(ellipse at center, hsl(var(--brand) / 0.3) 0%, transparent 70%);
     --gradient-mesh: conic-gradient(from 0deg at 50% 50%, hsl(var(--brand)) 0deg, hsl(var(--brand-secondary)) 120deg, hsl(var(--brand-tertiary)) 240deg, hsl(var(--brand)) 360deg);
   }
 
   .light {
-    --background: 0 0% 98%;           /* Light clean background */
-    --foreground: 20 16% 15%;
+    --background: 0 0% 99%;           /* Ultra light clean background */
+    --foreground: 0 0% 8%;            /* Very dark text for high contrast */
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 16% 15%;
+    --card: 0 0% 100%;                /* Pure white cards */
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 16% 15%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 264 100% 65%;          /* Slightly darker purple for light mode */
+    --primary: 142 76% 36%;           /* Professional forest green */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 17% 95%;
-    --secondary-foreground: 20 16% 15%;
+    --secondary: 210 20% 96%;         /* Very light secondary */
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 210 17% 95%;
-    --muted-foreground: 215 16% 45%;
+    --muted: 210 20% 96%;             /* Light muted areas */
+    --muted-foreground: 215 16% 40%;  /* Medium gray text */
 
-    --accent: 31 100% 65%;            /* Darker golden for light mode */
+    --accent: 31 85% 60%;             /* Bright golden accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 88%;
-    --input: 214 32% 88%;
-    --ring: 264 100% 65%;
+    --border: 214 32% 92%;            /* Very light borders */
+    --input: 214 32% 94%;             /* Light input backgrounds */
+    --ring: 142 76% 36%;              /* Green focus ring */
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 20 16% 15%;
-    --sidebar-primary: 264 100% 65%;
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 142 76% 36%;   /* Forest green */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 17% 95%;
-    --sidebar-accent-foreground: 20 16% 15%;
-    --sidebar-border: 214 32% 88%;
-    --sidebar-ring: 264 100% 65%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 214 32% 92%;
+    --sidebar-ring: 142 76% 36%;
 
-    --brand: 264 100% 65%;
-    --brand-secondary: 31 100% 65%;
-    --brand-tertiary: 210 100% 60%;
+    --brand: 142 76% 36%;             /* Primary forest green */
+    --brand-secondary: 31 85% 60%;    /* Golden accent */
+    --brand-tertiary: 158 64% 52%;    /* Emerald green */
     --brand-foreground: 0 0% 100%;
 
-    --shadow-glow: 0 0 30px hsl(var(--brand) / 0.3);
-    --shadow-elegant: 0 15px 35px hsl(0 0% 0% / 0.1);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
-    --shadow-floating: 0 10px 25px hsl(0 0% 0% / 0.15);
+    /* Light theme shadows - much softer */
+    --shadow-glow: 0 0 40px hsl(var(--brand) / 0.15);
+    --shadow-elegant: 0 15px 35px hsl(0 0% 0% / 0.06);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.04);
+    --shadow-floating: 0 10px 25px hsl(0 0% 0% / 0.08);
   }
 
 }
@@ -131,6 +132,10 @@
 /* Utilities & components moderni per portfolio professionale */
 @layer utilities {
   .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-brand {
     background: var(--gradient-primary);
   }
   
@@ -170,6 +175,43 @@
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     border: 1px solid hsl(var(--border) / 0.8);
     box-shadow: var(--shadow-floating);
+  }
+  
+  /* Enhanced glass effects for light theme */
+  .light .glass-card {
+    background: linear-gradient(145deg, 
+      hsl(var(--card) / 0.95) 0%, 
+      hsl(var(--card) / 0.85) 100%);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: var(--shadow-card), 
+                0 0 0 1px hsl(var(--border) / 0.05);
+  }
+  
+  .light .glass-floating {
+    background: linear-gradient(145deg, 
+      hsl(var(--card) / 0.98) 0%, 
+      hsl(var(--card) / 0.92) 100%);
+    backdrop-filter: blur(15px) saturate(130%);
+    -webkit-backdrop-filter: blur(15px) saturate(130%);
+    border: 1px solid hsl(var(--border) / 0.4);
+    box-shadow: var(--shadow-floating), 
+                0 0 0 1px hsl(var(--border) / 0.08);
+  }
+  
+  /* Enhanced gradients for light theme - ensure visibility */
+  .light .bg-gradient-brand,
+  .light .bg-gradient-primary {
+    background: linear-gradient(135deg, 
+      hsl(142 76% 36%) 0%, 
+      hsl(31 85% 60%) 100%);
+    color: white;
+    border: none;
+  }
+  
+  .light .text-brand-foreground {
+    color: white;
   }
   
   .spotlight {
