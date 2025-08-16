@@ -23,32 +23,68 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-12 md:py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Projects</h2>
-        <p className="text-muted-foreground max-w-2xl mb-10">
-          Here you can find a selection of projects developed both as part of my university studies and for personal interest. Each project highlights my passion for software engineering, problem solving, and modern technologies.
-        </p>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {projects.map((p) => (
+    <section id="projects" className="py-20 md:py-32 relative">
+      <div className="absolute top-20 left-1/4 w-64 h-64 bg-brand/10 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            <span className="text-gradient">Featured Projects</span>
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            A showcase of innovative solutions combining <span className="text-brand font-semibold">modern technologies</span> 
+            with thoughtful design. Each project demonstrates problem-solving skills and technical expertise.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {projects.map((p, index) => (
             <a
               key={p.title}
               href={p.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block group rounded-xl border border-border overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300 will-change-transform hover:-translate-y-1 min-h-[340px]"
+              className="group block"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
-              <article>
-                <div className="aspect-[16/10] overflow-hidden bg-muted">
-                  <img src={p.image} alt={`${p.title} screenshot`} loading="lazy" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+              <article className="glass-floating rounded-2xl overflow-hidden hover-glow magnetic-hover h-full">
+                <div className="aspect-[16/10] overflow-hidden bg-gradient-to-br from-brand/20 to-brand-secondary/20 relative">
+                  <img 
+                    src={p.image} 
+                    alt={`${p.title} screenshot`} 
+                    loading="lazy" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-4 sm:p-5">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2">{p.title}</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground mb-3">{p.description}</p>
-                  <p className="text-xs text-blue-600 dark:text-blue-400 mb-4 font-medium">{p.metrics}</p>
+                
+                <div className="p-6 sm:p-8">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-gradient transition-all duration-300">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
+                    {p.description}
+                  </p>
+                  <p className="text-xs sm:text-sm text-brand font-semibold mb-6 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+                    {p.metrics}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {p.tech.map((t) => (
-                      <Badge key={t} variant="secondary">{t}</Badge>
+                      <Badge 
+                        key={t} 
+                        variant="secondary" 
+                        className="hover:bg-brand hover:text-brand-foreground transition-colors duration-300"
+                      >
+                        {t}
+                      </Badge>
                     ))}
                   </div>
                 </div>
