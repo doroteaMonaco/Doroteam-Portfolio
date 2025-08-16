@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 const navItems = [
   { href: "#projects", label: "Projects" },
@@ -56,6 +56,13 @@ export const SiteHeader = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
+                href="https://wa.me/+393348504369" 
+                aria-label="WhatsApp" 
+                className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 hover:bg-brand/10 transition-all duration-300"
+              >
+                <MessageCircle className="h-5 w-5" />
+              </a>
+              <a 
                 href="mailto:dorotea.monaco@gmail.com" 
                 aria-label="Email" 
                 className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 hover:bg-brand/10 transition-all duration-300"
@@ -103,6 +110,9 @@ export const SiteHeader = () => {
                 </a>
                 <a href="https://www.linkedin.com/in/dorotea-monaco-0a0bba24a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRFm6%2B%2Fs5S0SKUdnILyDpcg%3D%3D" aria-label="LinkedIn" className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 transition-all duration-300">
                   <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="https://wa.me/+393456789012" aria-label="WhatsApp" className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 transition-all duration-300">
+                  <MessageCircle className="h-5 w-5" />
                 </a>
                 <a href="mailto:dorotea.monaco@gmail.com" aria-label="Email" className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 transition-all duration-300">
                   <Mail className="h-5 w-5" />

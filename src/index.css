@@ -299,4 +299,28 @@
   .animate-pulse-glow {
     animation: pulse-glow 3s ease-in-out infinite;
   }
+
+  /* Chatbot specific styles */
+  .chatbot-shadow {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px hsl(var(--brand) / 0.2);
+  }
+
+  .chatbot-bubble {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
+
+  .chatbot-bubble:hover {
+    transform: scale(1);
+  }
+
+  .typing-animation {
+    animation: typing 1.5s infinite;
+  }
+
+  @keyframes typing {
+    0%, 20% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
 }
