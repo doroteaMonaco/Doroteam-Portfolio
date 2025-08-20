@@ -1,8 +1,11 @@
 import { useState, useCallback, type CSSProperties } from "react";
 import { Button } from "@/components/ui/button";
+import { CvDropdown } from "@/components/ui/cv-dropdown";
+import { useLanguageContext } from "@/contexts/TranslationContext";
 
 export const Hero = () => {
   const [pos, setPos] = useState({ x: "50%", y: "50%" });
+  const { t } = useLanguageContext();
 
   const handleMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -33,7 +36,7 @@ export const Hero = () => {
             
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight mb-6">
               <span className="block">Dorotea Monaco</span>
-              <span className="text-gradient block">Software Engineer</span>
+              <span className="text-gradient block">{t('hero.role')}</span>
             </h1>
             
             <p className="text-xl md:text-2xl font-medium text-foreground mb-4 opacity-90">
@@ -41,30 +44,24 @@ export const Hero = () => {
             </p>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
-              Computer Engineering student building <span className="text-gradient font-semibold">next-generation web applications</span>. 
-              Specialized in modern tech stack with hands-on experience in scalable architecture and cloud solutions.
+              {t('hero.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
               <a href="#projects" className="w-full sm:w-auto">
                 <Button variant="gradient" size="lg" className="w-full group">
-                  <span>View My Work</span>
+                  <span>{t('hero.viewProjects')}</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Button>
               </a>
               <a href="#contact" className="w-full sm:w-auto">
-                <Button variant="outline" size="lg" className="w-full">Let's Connect</Button>
+                <Button variant="outline" size="lg" className="w-full">{t('hero.letsConnect')}</Button>
               </a>
-              <a href="/cv.pdf" download="Dorotea_Monaco_CV.pdf" className="w-full sm:w-auto">
-                <Button variant="outline" size="lg" className="w-full group">
-                  <svg className="w-4 h-4 group-hover:translate-y-[-2px] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                  <span>Download CV</span>
-                </Button>
-              </a>
+              <div className="w-full sm:w-auto">
+                <CvDropdown />
+              </div>
             </div>
           </div>
         </div>

@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { LanguageToggle } from "@/components/ui/language-toggle";
+import { useLanguageContext } from "@/contexts/TranslationContext";
 import { Menu, X, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
-
-const navItems = [
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
-];
 
 export const SiteHeader = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useLanguageContext();
+
+  const navItems = [
+    { href: "#projects", label: t('nav.projects') },
+    { href: "#skills", label: t('nav.skills') },
+    { href: "#about", label: t('nav.about') },
+    { href: "#contact", label: t('nav.contact') },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full glass-floating border-b border-border/20">
@@ -40,6 +43,7 @@ export const SiteHeader = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-3">
+              <LanguageToggle />
               <ThemeToggle />
               <a 
                 href="https://github.com/doroteaMonaco" 
@@ -73,8 +77,8 @@ export const SiteHeader = () => {
             
             <a href="#contact">
               <Button variant="gradient" size="sm" className="ml-2">
-                <span className="hidden lg:inline">💼 Hire Me</span>
-                <span className="lg:hidden">Hire</span>
+                <span className="hidden lg:inline">💼 {t('nav.hire')}</span>
+                <span className="lg:hidden">{t('nav.hire')}</span>
               </Button>
             </a>
           </div>
@@ -104,6 +108,7 @@ export const SiteHeader = () => {
               ))}
               
               <div className="flex items-center justify-center gap-3 py-4">
+                <LanguageToggle />
                 <ThemeToggle />
                 <a href="https://github.com/doroteaMonaco" aria-label="GitHub" className="w-10 h-10 rounded-lg bg-background/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-brand/50 transition-all duration-300">
                   <Github className="h-5 w-5" />
@@ -120,7 +125,7 @@ export const SiteHeader = () => {
               </div>
               
               <a href="#contact" onClick={() => setOpen(false)}>
-                <Button className="w-full" variant="gradient">💼 Hire Me</Button>
+                <Button className="w-full" variant="gradient">💼 {t('nav.hire')}</Button>
               </a>
             </nav>
           </div>

@@ -1,27 +1,29 @@
 import geocontrolImg from "@/assets/projects/geocontrol.png";
 import misfortuneImg from "@/assets/projects/misfortune.png";
 import { Badge } from "@/components/ui/badge";
-
-const projects = [
-  {
-    title: "Misfortune Game",
-    description: "Interactive web game with dynamic scoring system. Features real-time card evaluation, responsive UI, and engaging game mechanics. Built with full-stack architecture supporting multiple concurrent players.",
-    metrics: "🎯 Responsive design • 🚀 Real-time updates • 🎮 Interactive gameplay",
-    image: misfortuneImg,
-    link: "https://github.com/doroteaMonaco/Misfortune-Game-Web-App-1",
-    tech: ["JavaScript", "React", "Node.js", "Express"],
-  },
-  {
-    title: "GeoControl Software",
-    description: "Enterprise monitoring system for environmental data collection. Handles real-time sensor data processing, automated alerts, and comprehensive reporting for critical infrastructure monitoring.",
-    metrics: "📊 Real-time monitoring • 🔔 Automated alerts • 🏗️ Scalable architecture",
-    image: geocontrolImg, 
-    tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
-    link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
-  },
-];
+import { useLanguageContext } from "@/contexts/TranslationContext";
 
 export const Projects = () => {
+  const { t } = useLanguageContext();
+
+  const projects = [
+    {
+      title: t('projects.misfortune.title'),
+      description: t('projects.misfortune.description'),
+      metrics: "🎯 Responsive design • 🚀 Real-time updates • 🎮 Interactive gameplay",
+      image: misfortuneImg,
+      link: "https://github.com/doroteaMonaco/Misfortune-Game-Web-App-1",
+      tech: ["JavaScript", "React", "Node.js", "Express"],
+    },
+    {
+      title: t('projects.geocontrol.title'),
+      description: t('projects.geocontrol.description'),
+      metrics: "📊 Real-time monitoring • 🔔 Automated alerts • 🏗️ Scalable architecture",
+      image: geocontrolImg, 
+      tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
+      link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
+    },
+  ];
   return (
     <section id="projects" className="py-20 md:py-32 relative">
       <div className="absolute top-20 left-1/4 w-64 h-64 bg-brand/10 rounded-full blur-3xl"></div>
@@ -29,11 +31,10 @@ export const Projects = () => {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient">Featured Projects</span>
+            <span className="text-gradient">{t('projects.title')}</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A showcase of innovative solutions combining <span className="text-brand font-semibold">modern technologies</span> 
-            with thoughtful design. Each project demonstrates problem-solving skills and technical expertise.
+            {t('projects.subtitle')}
           </p>
         </div>
         

@@ -15,7 +15,7 @@
     --popover: 20 16% 9%;
     --popover-foreground: 210 40% 96%;
 
-    --primary: 142 76% 45%;          /* Forest green for dark theme */
+    --primary: 217 91% 60%;          /* Modern blue for dark theme */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 20 16% 12%;         /* Dark secondary */
@@ -32,37 +32,37 @@
 
     --border: 27 16% 18%;            /* Subtle border */
     --input: 27 16% 18%;
-    --ring: 142 76% 45%;             /* Green focus ring */
+    --ring: 217 91% 60%;             /* Blue focus ring */
 
     --radius: 1rem;
 
     --sidebar-background: 20 16% 9%;
     --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 142 76% 45%;  /* Forest green */
+    --sidebar-primary: 217 91% 60%;  /* Modern blue */
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 27 16% 18%;
     --sidebar-accent-foreground: 210 40% 96%;
     --sidebar-border: 27 16% 18%;
-    --sidebar-ring: 142 76% 45%;
+    --sidebar-ring: 217 91% 60%;
 
-    /* Professional Brand Colors - Now Green */
-    --brand: 142 76% 45%;            /* Primary forest green */
-    --brand-secondary: 31 100% 71%;  /* Golden accent */
-    --brand-tertiary: 158 64% 55%;   /* Emerald green */
+    /* Professional Brand Colors - Beautiful Blue Gradient */
+    --brand: 217 91% 60%;            /* Primary modern blue */
+    --brand-secondary: 250 84% 70%;  /* Light purple-blue */
+    --brand-tertiary: 200 98% 65%;   /* Bright cyan-blue */
     --brand-foreground: 0 0% 100%;
 
     /* Enhanced Motion & Effects */
     --transition-smooth: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-bounce: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
-    /* Professional Shadows with green tint */
+    /* Professional Shadows with blue tint */
     --shadow-glow: 0 0 50px hsl(var(--brand) / 0.5);
     --shadow-elegant: 0 25px 50px -12px hsl(0 0% 0% / 0.6);
     --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
     --shadow-floating: 0 20px 40px hsl(0 0% 0% / 0.4);
 
-    /* Gradient definitions - Now Green */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-secondary)) 100%);
+    /* Gradient definitions - Beautiful Blue Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-secondary)) 50%, hsl(var(--brand-tertiary)) 100%);
     --gradient-glow: radial-gradient(ellipse at center, hsl(var(--brand) / 0.3) 0%, transparent 70%);
     --gradient-mesh: conic-gradient(from 0deg at 50% 50%, hsl(var(--brand)) 0deg, hsl(var(--brand-secondary)) 120deg, hsl(var(--brand-tertiary)) 240deg, hsl(var(--brand)) 360deg);
   }
@@ -77,7 +77,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 8%;
 
-    --primary: 142 76% 36%;           /* Professional forest green */
+    --primary: 217 91% 50%;           /* Professional modern blue */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 96%;         /* Very light secondary */
@@ -94,20 +94,20 @@
 
     --border: 214 32% 92%;            /* Very light borders */
     --input: 214 32% 94%;             /* Light input backgrounds */
-    --ring: 142 76% 36%;              /* Green focus ring */
+    --ring: 217 91% 50%;              /* Blue focus ring */
 
     --sidebar-background: 0 0% 99%;
     --sidebar-foreground: 0 0% 8%;
-    --sidebar-primary: 142 76% 36%;   /* Forest green */
+    --sidebar-primary: 217 91% 50%;   /* Modern blue */
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 20% 96%;
     --sidebar-accent-foreground: 0 0% 8%;
     --sidebar-border: 214 32% 92%;
-    --sidebar-ring: 142 76% 36%;
+    --sidebar-ring: 217 91% 50%;
 
-    --brand: 142 76% 36%;             /* Primary forest green */
-    --brand-secondary: 31 85% 60%;    /* Golden accent */
-    --brand-tertiary: 158 64% 52%;    /* Emerald green */
+    --brand: 217 91% 50%;             /* Primary modern blue */
+    --brand-secondary: 250 84% 65%;   /* Light purple-blue */
+    --brand-tertiary: 200 98% 60%;    /* Bright cyan-blue */
     --brand-foreground: 0 0% 100%;
 
     /* Light theme shadows - much softer */
@@ -137,6 +137,15 @@
   
   .bg-gradient-brand {
     background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-ocean {
+    background: linear-gradient(135deg, 
+      hsl(217 91% 60%) 0%,
+      hsl(250 84% 70%) 25%, 
+      hsl(200 98% 65%) 50%,
+      hsl(210 100% 70%) 75%,
+      hsl(220 85% 65%) 100%);
   }
   
   .bg-gradient-mesh {
@@ -204,8 +213,9 @@
   .light .bg-gradient-brand,
   .light .bg-gradient-primary {
     background: linear-gradient(135deg, 
-      hsl(142 76% 36%) 0%, 
-      hsl(31 85% 60%) 100%);
+      hsl(217 91% 50%) 0%, 
+      hsl(250 84% 65%) 50%,
+      hsl(200 98% 60%) 100%);
     color: white;
     border: none;
   }

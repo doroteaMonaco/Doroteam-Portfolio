@@ -5,11 +5,9 @@ import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/lib/supabaseClient";
 import { ContactForm, ContactResponse } from "@/types/contact";
-import { useLanguageContext } from "@/contexts/TranslationContext";
 import { Mail, Send, CheckCircle } from "lucide-react";
 
 export const Contact = () => {
-  const { t } = useLanguageContext();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -30,7 +28,7 @@ export const Contact = () => {
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Error",
-        description: "Please fill in all fields.",
+        description: "All fields are required",
         variant: "destructive",
       });
       setIsLoading(false);
@@ -39,10 +37,12 @@ export const Contact = () => {
 
     try {
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData
+        body: formData,
       });
 
-      if (error) throw error;
+      if (error) {
+        throw error;
+      }
 
       const response = data as ContactResponse;
 
@@ -77,19 +77,19 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">{t('contact.title')}</h2>
-        <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mb-8">{t('contact.subtitle')}</p>
-        <form onSubmit={npsend} className="w-full max-w-xl grid gap-4 mx-auto">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">Contact</h2>
+  <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mb-8">Interested in working together? Send a message — I’ll reply within 24 hours.</p>
+  <form onSubmit={npsend} className="w-full max-w-xl grid gap-4 mx-auto">
           <div>
-            <label className="block text-sm mb-2" htmlFor="name">{t('contact.form.name')}</label>
+            <label className="block text-sm mb-2" htmlFor="name">Name</label>
             <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required />
           </div>
           <div>
-            <label className="block text-sm mb-2" htmlFor="email">{t('contact.form.email')}</label>
+            <label className="block text-sm mb-2" htmlFor="email">Email</label>
             <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@company.com" required />
           </div>
           <div>
-            <label className="block text-sm mb-2" htmlFor="message">{t('contact.form.message')}</label>
+            <label className="block text-sm mb-2" htmlFor="message">Message</label>
             <Textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Hi! I'd like to discuss..." rows={5} required />
           </div>
           <div>
@@ -107,12 +107,12 @@ export const Contact = () => {
               ) : isSuccess ? (
                 <>
                   <CheckCircle className="mr-2 h-4 w-4" />
-                  Message Sent!
+                  Message sent!
                 </>
               ) : (
                 <>
                   <Send className="mr-2 h-4 w-4" />
-                  {t('contact.form.send')}
+                  Send message
                 </>
               )}
             </Button>

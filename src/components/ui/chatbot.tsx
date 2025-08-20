@@ -321,7 +321,7 @@ What would you like to know?`,
               <div className="flex items-center space-x-3">
                 <div className="relative">
                   <Bot className="h-6 w-6" />
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse" />
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-400 rounded-full animate-pulse" />
                 </div>
                 <div>
                   <CardTitle className="text-lg font-semibold">Dorotea's Assistant</CardTitle>
