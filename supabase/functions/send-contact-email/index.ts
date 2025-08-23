@@ -71,30 +71,30 @@ serve(async (req) => {
 
     // Notification email for you (portfolio owner)
     const notificationEmail = {
-      from: "Portfolio Contact <noreply@resend.dev>",
+      from: "Portfolio Contact <noreply@doroteamonaco.dev>", 
       to: ["dorotea.monaco@gmail.com"],
       subject: `New message from ${name} - Portfolio`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="background: linear-gradient(135deg, #2d7d45 0%, #d97706 100%); padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+          <div style="background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #06b6d4 100%); padding: 30px; border-radius: 10px; margin-bottom: 20px;">
             <h1 style="color: white; margin: 0; text-align: center;">New Message from Portfolio</h1>
           </div>
           
           <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h2 style="color: #2d7d45; margin-top: 0;">Contact Details</h2>
+            <h2 style="color: #2563eb; margin-top: 0;">Contact Details</h2>
             <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #2d7d45;">${email}</a></p>
+            <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #2563eb;">${email}</a></p>
             <p><strong>Date:</strong> ${new Date().toLocaleString('en-US')}</p>
             
-            <h3 style="color: #2d7d45; margin-top: 30px;">Message:</h3>
-            <div style="background-color: white; padding: 20px; border-radius: 6px; border-left: 4px solid #2d7d45; margin-top: 10px;">
+            <h3 style="color: #2563eb; margin-top: 30px;">Message:</h3>
+            <div style="background-color: white; padding: 20px; border-radius: 6px; border-left: 4px solid #2563eb; margin-top: 10px;">
               ${message.replace(/\n/g, '<br>')}
             </div>
           </div>
           
           <div style="text-align: center; margin-top: 30px;">
             <a href="mailto:${email}?subject=Re: Portfolio message&body=Hi ${name},%0A%0AThank you for contacting me..." 
-               style="background: linear-gradient(135deg, #2d7d45 0%, #d97706 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block;">
+               style="background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #06b6d4 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block;">
               Reply Directly
             </a>
           </div>
@@ -107,25 +107,30 @@ serve(async (req) => {
       `,
     };
 
-    // Confirmation email for the sender
+    // WORKAROUND: Send confirmation copy to yourself with visitor's email in subject
+    // This is needed because Resend free tier only allows sending to verified emails
     const confirmationEmail = {
-      from: "Dorotea Monaco <noreply@resend.dev>",
-      to: [email],
+      from: "Dorotea Monaco Portfolio <noreply@doroteamonaco.dev>", 
+      to: [email], // Torna a email normale quando hai il dominio
+      reply_to: "dorotea.monaco@gmail.com",
       subject: "Thanks for reaching out! 🌟",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="background: linear-gradient(135deg, #2d7d45 0%, #d97706 100%); padding: 30px; border-radius: 10px; margin-bottom: 20px;">
-            <h1 style="color: white; margin: 0; text-align: center;">Thank you for your message!</h1>
+          <div style="background: #f44336; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+            <strong>⚠️ COPY FOR: ${email}</strong><br>
+            <small>This email should be manually forwarded to the visitor</small>
           </div>
           
-          <div style="padding: 20px;">
-            <p style="font-size: 18px; color: #2d7d45;">Hi ${name}! 👋</p>
+          <div style="background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #06b6d4 100%); padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+            <h1 style="color: white; margin: 0; text-align: center;">Thank you for your message!</h1>
+          </div>          <div style="padding: 20px;">
+            <p style="font-size: 18px; color: #2563eb;">Hi ${name}! 👋</p>
             
             <p>I've received your message and will get back to you <strong>within 24 hours</strong>.</p>
             
             <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <h3 style="margin-top: 0; color: #2d7d45;">Your message:</h3>
-              <div style="background-color: white; padding: 15px; border-radius: 6px; border-left: 4px solid #2d7d45;">
+              <h3 style="margin-top: 0; color: #2563eb;">Your message:</h3>
+              <div style="background-color: white; padding: 15px; border-radius: 6px; border-left: 4px solid #2563eb;">
                 ${message.replace(/\n/g, '<br>')}
               </div>
               <p style="color: #666; font-size: 12px; margin-bottom: 0;">
@@ -135,12 +140,12 @@ serve(async (req) => {
             
             <p>In the meantime, feel free to:</p>
             <ul style="color: #555;">
-              <li>Explore my <a href="#" style="color: #2d7d45;">projects</a> on the portfolio</li>
-              <li>Connect with me on <a href="https://linkedin.com/in/dorotea-monaco-0a0bba24a" style="color: #2d7d45;">LinkedIn</a></li>
-              <li>Check out my <a href="https://github.com/doroteaMonaco" style="color: #2d7d45;">GitHub</a></li>
+              <li>Explore my <a href="#" style="color: #2563eb;">projects</a> on the portfolio</li>
+              <li>Connect with me on <a href="https://linkedin.com/in/dorotea-monaco-0a0bba24a" style="color: #2563eb;">LinkedIn</a></li>
+              <li>Check out my <a href="https://github.com/doroteaMonaco" style="color: #2563eb;">GitHub</a></li>
             </ul>
             
-            <div style="background: linear-gradient(135deg, #2d7d45 0%, #d97706 100%); padding: 20px; border-radius: 8px; margin: 30px 0; text-align: center;">
+            <div style="background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #06b6d4 100%); padding: 20px; border-radius: 8px; margin: 30px 0; text-align: center;">
               <p style="color: white; margin: 0; font-size: 16px;">
                 🚀 <strong>I'm always looking for new opportunities and interesting collaborations!</strong>
               </p>
@@ -148,7 +153,7 @@ serve(async (req) => {
             
             <p style="margin-top: 30px;">
               Talk soon,<br>
-              <strong style="color: #2d7d45;">Dorotea Monaco</strong><br>
+              <strong style="color: #2563eb;">Dorotea Monaco</strong><br>
               <span style="color: #666; font-size: 14px;">Full Stack Developer</span>
             </p>
           </div>
@@ -162,31 +167,75 @@ serve(async (req) => {
     };
 
     // Send both emails
-    const [notificationResponse, confirmationResponse] = await Promise.all([
-      // Notification email for you
-      fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${RESEND_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(notificationEmail),
-      }),
-      // Confirmation email for the sender
-      fetch("https://api.resend.com/emails", {
+    // Send notification email to you (always works)
+    console.log("📧 Sending notification email to:", notificationEmail.to);
+    const notificationResponse = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(notificationEmail),
+    });
+    const notificationResult = await notificationResponse.json();
+
+    // Try to send confirmation email to visitor first
+    console.log("📧 Trying to send confirmation email to:", email);
+    let confirmationResponse;
+    let confirmationResult;
+    
+    try {
+      confirmationResponse = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${RESEND_API_KEY}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify(confirmationEmail),
-      }),
-    ]);
+      });
+      confirmationResult = await confirmationResponse.json();
+      
+    } catch (error) {
+      console.log("❌ Direct confirmation failed:", error);
+      confirmationResponse = { ok: false, status: 500 };
+      confirmationResult = { error: "Failed to send" };
+    }
+    
+    // If confirmation to visitor fails (due to Resend limitations), send copy to admin
+    if (!confirmationResponse.ok) {
+      console.log("📧 Sending confirmation copy to admin for manual forwarding");
+      
+      const adminCopyEmail = {
+        from: "Portfolio Contact <noreply@resend.dev>",
+        to: ["dorotea.monaco@gmail.com"],
+        subject: `[FORWARD TO ${email}] Confirmation Email Copy`,
+        html: `
+          <div style="background: #f44336; color: white; padding: 15px; margin-bottom: 20px; text-align: center; border-radius: 8px;">
+            <strong>📧 FORWARD THIS EMAIL TO: ${email}</strong><br>
+            <small>Resend free tier limitation - please copy/forward this confirmation to the visitor</small>
+          </div>
+          ${confirmationEmail.html}
+        `
+      };
+      
+      try {
+        const adminCopyResponse = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${RESEND_API_KEY}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(adminCopyEmail),
+        });
+        const adminCopyResult = await adminCopyResponse.json();
+        console.log("📧 Admin copy sent:", adminCopyResult);
+      } catch (adminError) {
+        console.error("❌ Failed to send admin copy:", adminError);
+      }
+    }
 
-    const [notificationResult, confirmationResult] = await Promise.all([
-      notificationResponse.json(),
-      confirmationResponse.json(),
-    ]);
+    console.log("📧 Notification response:", notificationResponse.status, notificationResult);
+    console.log("📧 Confirmation response:", confirmationResponse?.status, confirmationResult);
 
     // Check if at least the notification email was sent
     if (!notificationResponse.ok) {
@@ -195,8 +244,10 @@ serve(async (req) => {
     }
 
     // Log warning if confirmation email fails, but don't block the process
-    if (!confirmationResponse.ok) {
-      console.error("⚠️ Failed to send confirmation email:", confirmationResult);
+    if (!confirmationResponse?.ok) {
+      console.error("⚠️ Direct confirmation email failed - copy sent to admin instead");
+    } else {
+      console.log("✅ Confirmation email sent successfully to:", email);
     }
 
     return new Response(
@@ -204,7 +255,13 @@ serve(async (req) => {
         success: true, 
         message: "Message received! I'll get back to you soon.",
         notificationId: notificationResult.id,
-        confirmationId: confirmationResponse.ok ? confirmationResult.id : null,
+        confirmationId: confirmationResponse?.ok ? confirmationResult.id : null,
+        confirmationSent: confirmationResponse?.ok || false,
+        workaround: !confirmationResponse?.ok ? "Confirmation copy sent to admin for manual forwarding" : null,
+        debug: {
+          notificationStatus: notificationResponse.status,
+          confirmationStatus: confirmationResponse?.status || "failed",
+        }
       }),
       {
         status: 200,
