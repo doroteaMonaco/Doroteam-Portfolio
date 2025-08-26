@@ -1,7 +1,6 @@
 import geocontrolImg from "@/assets/projects/geocontrol.png";
 import misfortuneImg from "@/assets/projects/misfortune.png";
-// Placeholder image for Ruggine - replace with actual screenshot when available
-const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
+import ruggineImg from "@/assets/projects/ruggine.png";
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
 import { Github } from "lucide-react";
