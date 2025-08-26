@@ -43,6 +43,8 @@ const translations = {
     'projects.misfortune.description': 'Un\'applicazione completa per le statistiche di gioco con visualizzazione dei dati in tempo reale, analisi degli utenti e monitoraggio delle prestazioni. Costruita con React e tecnologie moderne per un\'esperienza utente fluida.',
     'projects.geocontrol.title': 'GeoControl',
     'projects.geocontrol.description': 'Sistema avanzato di gestione basato sulla posizione per l\'elaborazione di dati geografici, mappatura e analisi spaziale. Integra API moderne per fornire insight geografici accurati.',
+    'projects.ruggine.title': 'Ruggine',
+    'projects.ruggine.description': 'Applicazione di chat moderna sviluppata in Rust con interfaccia grafica nativa. Supporta chat di gruppo, messaggi privati, inviti ai gruppi e richieste di amicizia per una comunicazione fluida e sicura.',
     
     // Contact Section
     'contact.title': 'Mettiti in Contatto',
@@ -110,6 +112,8 @@ const translations = {
     'projects.misfortune.description': 'A comprehensive gaming statistics application featuring real-time data visualization, user analytics, and performance tracking. Built with React and modern technologies for a seamless user experience.',
     'projects.geocontrol.title': 'GeoControl',
     'projects.geocontrol.description': 'Advanced location-based management system for geographical data processing, mapping, and spatial analysis. Integrates modern APIs to provide accurate geographical insights.',
+    'projects.ruggine.title': 'Ruggine',
+    'projects.ruggine.description': 'Modern chat application built with Rust featuring native GUI interface. Supports group chats, private messaging, group invitations, and friend requests for seamless and secure communication.',
     
     // Contact Section
     'contact.title': 'Get In Touch',

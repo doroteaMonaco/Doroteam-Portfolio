@@ -1,5 +1,7 @@
 import geocontrolImg from "@/assets/projects/geocontrol.png";
 import misfortuneImg from "@/assets/projects/misfortune.png";
+// Placeholder image for Ruggine - replace with actual screenshot when available
+const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
 
@@ -22,6 +24,14 @@ export const Projects = () => {
       image: geocontrolImg, 
       tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
       link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
+    },
+    {
+      title: t('projects.ruggine.title'),
+      description: t('projects.ruggine.description'),
+      metrics: "💬 Group & private chats • 👥 Friend requests • 🦀 Native Rust performance",
+      image: ruggineImg,
+      tech: ["Rust", "Iced", "PostgreSQL", "Native GUI"],
+      link: "https://github.com/LuigiGonnella/Ruggine",
     },
   ];
   return (
