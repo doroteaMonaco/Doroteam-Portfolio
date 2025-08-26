@@ -4,6 +4,7 @@ import misfortuneImg from "@/assets/projects/misfortune.png";
 const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
+import { Github } from "lucide-react";
 
 export const Projects = () => {
   const { t } = useLanguageContext();
@@ -32,6 +33,12 @@ export const Projects = () => {
       image: ruggineImg,
       tech: ["Rust", "Iced", "PostgreSQL", "Native GUI"],
       link: "https://github.com/LuigiGonnella/Ruggine",
+      contributors: [
+        {
+          name: "Luigi Gonnella",
+          github: "https://github.com/LuigiGonnella"
+        }
+      ]
     },
   ];
   return (
@@ -98,6 +105,27 @@ export const Projects = () => {
                       </Badge>
                     ))}
                   </div>
+                  
+                  {p.contributors && (
+                    <div className="border-t border-border/50 pt-4">
+                      <p className="text-xs text-muted-foreground mb-2 font-medium">Contributors:</p>
+                      <div className="flex flex-wrap gap-2">
+                        {p.contributors.map((contributor, idx) => (
+                          <a
+                            key={idx}
+                            href={contributor.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-muted/50 hover:bg-brand/10 hover:text-brand transition-colors duration-300 text-xs"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <Github className="w-3 h-3" />
+                            <span>{contributor.name}</span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </article>
             </a>
