@@ -1,5 +1,6 @@
 import geocontrolImg from "@/assets/projects/geocontrol.png";
 import misfortuneImg from "@/assets/projects/misfortune.png";
+import pacmanImg from "@/assets/projects/pacman.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
 const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
@@ -40,6 +41,14 @@ export const Projects = () => {
         }
       ]
     },
+      {
+        title: "Pacman",
+    description: "A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.",
+      metrics: "👾 Classic gameplay • 🧠 Ghost AI • 🎨 Retro graphics",
+      image: pacmanImg,
+      tech: ["Assembly ARM", "Landtiger LPC1768"],
+        link: "https://github.com/doroteaMonaco/PACMAN",
+      },
   ];
   return (
     <section id="projects" className="py-20 md:py-32 relative">
