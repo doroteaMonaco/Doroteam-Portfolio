@@ -113,7 +113,7 @@ const translations = {
     'projects.geocontrol.title': 'GeoControl',
     'projects.geocontrol.description': 'Advanced location-based management system for geographical data processing, mapping, and spatial analysis. Integrates modern APIs to provide accurate geographical insights.',
     'projects.ruggine.title': 'Ruggine',
-    'projects.ruggine.description': 'Modern chat application built with Rust featuring native GUI interface. Supports group chats, private messaging, group invitations, and friend requests for seamless and secure communication.',
+    'projects.ruggine.description': 'Modern chat application built with Rust featuring native GUI interface, developed in collaboration with Luigi Gonnella 💜. Supports group chats, private messaging, group invitations, and friend requests for seamless and secure communication.',
     
     // Contact Section
     'contact.title': 'Get In Touch',

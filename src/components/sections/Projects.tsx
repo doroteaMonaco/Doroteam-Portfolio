@@ -33,7 +33,7 @@ export const Projects = () => {
       metrics: "💬 Group & private chats • 👥 Friend requests • 🦀 Native Rust performance",
       image: ruggineImg,
       tech: ["Rust", "Iced", "PostgreSQL", "Native GUI"],
-      link: "https://github.com/LuigiGonnella/Ruggine",
+      link: "https://github.com/doroteaMonaco/Ruggine",
       contributors: [
         {
           name: "Luigi Gonnella",
