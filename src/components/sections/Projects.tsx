@@ -29,7 +29,7 @@ export const Projects = () => {
     },
     {
       title: t('projects.ruggine.title'),
-      description: t('projects.ruggine.description'),
+  description: `${t('projects.ruggine.description')} Developed in collaboration with Luigi Gonnella 💜`,
       metrics: "💬 Group & private chats • 👥 Friend requests • 🦀 Native Rust performance",
       image: ruggineImg,
       tech: ["Rust", "Iced", "PostgreSQL", "Native GUI"],
@@ -42,8 +42,8 @@ export const Projects = () => {
       ]
     },
       {
-        title: "Pacman",
-    description: "A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.",
+  title: t('projects.pacman.title'),
+  description: t('projects.pacman.description'),
       metrics: "👾 Classic gameplay • 🧠 Ghost AI • 🎨 Retro graphics",
       image: pacmanImg,
       tech: ["Assembly ARM", "Landtiger LPC1768"],
@@ -128,6 +128,12 @@ export const Projects = () => {
                             className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-muted/50 hover:bg-brand/10 hover:text-brand transition-colors duration-300 text-xs"
                             onClick={(e) => e.stopPropagation()}
                           >
+                            <img
+                              src="https://github.com/LuigiGonnella.png"
+                              alt="Luigi Gonnella GitHub avatar"
+                              className="w-5 h-5 rounded-full border border-muted mr-1"
+                              style={{ display: 'inline-block', verticalAlign: 'middle' }}
+                            />
                             <Github className="w-3 h-3" />
                             <span>{contributor.name}</span>
                           </a>
