@@ -29,10 +29,10 @@ export const Projects = () => {
     },
     {
       title: t('projects.ruggine.title'),
-  description: `${t('projects.ruggine.description')} Developed in collaboration with Luigi Gonnella 💜`,
+      description: t('projects.ruggine.description'),
       metrics: "💬 Group & private chats • 👥 Friend requests • 🦀 Native Rust performance",
       image: ruggineImg,
-      tech: ["Rust", "Iced", "PostgreSQL", "Native GUI"],
+      tech: ["Rust", "Iced", "WebSocket", "Redis", "PostgreSQL"],
       link: "https://github.com/doroteaMonaco/Ruggine",
       contributors: [
         {

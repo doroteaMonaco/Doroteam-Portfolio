@@ -44,7 +44,7 @@ const translations = {
     'projects.geocontrol.title': 'GeoControl',
     'projects.geocontrol.description': 'Sistema avanzato di gestione basato sulla posizione per l\'elaborazione di dati geografici, mappatura e analisi spaziale. Integra API moderne per fornire insight geografici accurati.',
     'projects.ruggine.title': 'Ruggine',
-    'projects.ruggine.description': 'Applicazione di chat moderna sviluppata in Rust con interfaccia grafica nativa. Supporta chat di gruppo, messaggi privati, inviti ai gruppi e richieste di amicizia per una comunicazione fluida e sicura.',
+    'projects.ruggine.description': 'Applicazione di chat moderna sviluppata in Rust con interfaccia grafica nativa, sviluppata in collaborazione con Luigi Gonnella 💜. Utilizza WebSocket e Redis per supportare chat di gruppo, messaggi privati, inviti ai gruppi e richieste di amicizia per una comunicazione fluida e sicura.',
   'projects.pacman.title': 'Pacman',
   'projects.pacman.description': 'Un clone di Pacman sviluppato per la scheda Landtiger LPC1768, programmato in Assembly ARM. Gameplay classico, grafica retrò e intelligenza artificiale per i fantasmi.',
     
@@ -115,7 +115,7 @@ const translations = {
     'projects.geocontrol.title': 'GeoControl',
     'projects.geocontrol.description': 'Advanced location-based management system for geographical data processing, mapping, and spatial analysis. Integrates modern APIs to provide accurate geographical insights.',
     'projects.ruggine.title': 'Ruggine',
-    'projects.ruggine.description': 'Modern chat application built with Rust featuring native GUI interface, developed in collaboration with Luigi Gonnella 💜. Supports group chats, private messaging, group invitations, and friend requests for seamless and secure communication.',
+    'projects.ruggine.description': 'Modern chat application built with Rust featuring native GUI interface, developed in collaboration with Luigi Gonnella 💜. Uses WebSocket and Redis to support group chats, private messaging, group invitations, and friend requests for seamless and secure communication.',
   'projects.pacman.title': 'Pacman',
   'projects.pacman.description': 'A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.',
     
