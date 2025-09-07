@@ -1,6 +1,7 @@
 import geocontrolImg from "@/assets/projects/geocontrol.png";
 import misfortuneImg from "@/assets/projects/misfortune.png";
 import pacmanImg from "@/assets/projects/pacman.png";
+import recipeImg from "@/assets/projects/recipe.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
 const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
@@ -49,6 +50,15 @@ export const Projects = () => {
       tech: ["Assembly ARM", "Landtiger LPC1768"],
         link: "https://github.com/doroteaMonaco/PACMAN",
       },
+    {
+      title: t('projects.recipe.title'),
+      description: t('projects.recipe.description'),
+      metrics: "🍳 Recipe sharing • 👥 Community features ",
+      image: recipeImg,
+      tech: ["Next.js 15", "PostgreSQL", "Prisma", "NextAuth", "Redis", "TailwindCSS"],
+      link: "https://github.com/doroteaMonaco/Recipe-WebApp",
+      isUnderConstruction: true,
+    },
   ];
   return (
     <section id="projects" className="py-20 md:py-32 relative">
@@ -93,9 +103,16 @@ export const Projects = () => {
                 </div>
                 
                 <div className="p-6 sm:p-8">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-gradient transition-all duration-300">
-                    {p.title}
-                  </h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <h3 className="text-xl sm:text-2xl font-bold group-hover:text-gradient transition-all duration-300">
+                      {p.title}
+                    </h3>
+                    {p.isUnderConstruction && (
+                      <Badge variant="outline" className="text-xs bg-yellow-100 text-yellow-800 border-yellow-300 dark:bg-yellow-900 dark:text-yellow-200 dark:border-yellow-600">
+                        🚧 Work in Progress
+                      </Badge>
+                    )}
+                  </div>
                   <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
                     {p.description}
                   </p>
