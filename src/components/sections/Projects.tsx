@@ -51,12 +51,12 @@ export const Projects = () => {
         link: "https://github.com/doroteaMonaco/PACMAN",
       },
     {
-      title: t('projects.recipe.title'),
-      description: t('projects.recipe.description'),
-      metrics: "🍳 Recipe sharing • 👥 Community features ",
+      title: t('projects.recapp.title'),
+      description: t('projects.recapp.description'),
+      metrics: "🚧 Work in Progress • 🍳 Recipe sharing • 👥 Community features • ⚠️ UI & social features to be implemented",
       image: recipeImg,
-      tech: ["Next.js 15", "PostgreSQL", "Prisma", "NextAuth", "Redis", "TailwindCSS"],
-      link: "https://github.com/doroteaMonaco/Recipe-WebApp",
+      tech: ["React Router", "Prisma", "PostgreSQL", "Redis", "Supabase", "Vercel", "React", "JavaScript"],
+      link: "https://github.com/doroteaMonaco/RecApp",
       isUnderConstruction: true,
     },
   ];

@@ -47,8 +47,8 @@ const translations = {
     'projects.ruggine.description': 'Applicazione di chat moderna sviluppata in Rust con interfaccia grafica nativa, sviluppata in collaborazione con Luigi Gonnella 💜. Utilizza WebSocket e Redis per supportare chat di gruppo, messaggi privati, inviti ai gruppi e richieste di amicizia per una comunicazione fluida e sicura.',
   'projects.pacman.title': 'Pacman',
   'projects.pacman.description': 'Un clone di Pacman sviluppato per la scheda Landtiger LPC1768, programmato in Assembly ARM. Gameplay classico, grafica retrò e intelligenza artificiale per i fantasmi.',
-    'projects.recipe.title': 'Recipe Web App',
-    'projects.recipe.description': 'Un forum completo per la condivisione di ricette sviluppato con Next.js 15 e App Router. Include autenticazione completa, database PostgreSQL con Prisma ORM, sistema di commenti e valutazioni. Utilizza Redis per il caching e NextAuth per l\'autenticazione OAuth con GitHub e Google. ⚠️ Progetto ancora in fase di sviluppo - interfaccia utente da implementare.',
+  'projects.recapp.title': 'RecApp',
+  'projects.recapp.description': 'Forum di ricette sviluppato con React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, React e JavaScript. ⚠️ Progetto ancora in fase di sviluppo: l\'interfaccia utente e le funzionalità social devono essere implementate.',
     
     // Contact Section
     'contact.title': 'Mettiti in Contatto',
@@ -120,8 +120,8 @@ const translations = {
     'projects.ruggine.description': 'Modern chat application built with Rust featuring native GUI interface, developed in collaboration with Luigi Gonnella 💜. Uses WebSocket and Redis to support group chats, private messaging, group invitations, and friend requests for seamless and secure communication.',
   'projects.pacman.title': 'Pacman',
   'projects.pacman.description': 'A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.',
-    'projects.recipe.title': 'Recipe Web App',
-    'projects.recipe.description': 'A comprehensive recipe sharing forum built with Next.js 15 and App Router. Features complete authentication system, PostgreSQL database with Prisma ORM, comments and rating system. Uses Redis for caching and NextAuth for OAuth authentication with GitHub and Google. ⚠️ Project under active development - user interface implementation in progress.',
+  'projects.recapp.title': 'RecApp',
+  'projects.recapp.description': 'Recipe forum built with React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, React and JavaScript. ⚠️ Project under active development: UI and social features are still to be implemented.',
     
     // Contact Section
     'contact.title': 'Get In Touch',
