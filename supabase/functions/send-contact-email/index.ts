@@ -2,7 +2,7 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
 // @ts-ignore - Deno global
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY") || "re_Uto5kVV1_6MgcQPyt1xg9UBVDqHSqBiFN";
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
 interface ContactForm {
   name: string;
