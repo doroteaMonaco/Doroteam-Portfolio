@@ -21,13 +21,13 @@ export const CvDropdown = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuItem asChild>
-          <a href="/cv.pdf" download="Dorotea_Monaco_CV_IT.pdf" className="flex items-center">
+          <a href="/cv.pdf" download="DOROTEA MONACO CV ITA.pdf" className="flex items-center">
             <Download className="w-4 h-4 mr-2" />
             {t('cv.italian')}
           </a>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <a href="/cv.pdf" download="Dorotea_Monaco_CV_EN.pdf" className="flex items-center">
+          <a href="/cv.pdf" download="DOROTEA MONACO CV ENG.pdf" className="flex items-center">
             <Download className="w-4 h-4 mr-2" />
             {t('cv.english')}
           </a>

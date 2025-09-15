@@ -13,6 +13,10 @@ const technicalSkills = {
     icon: "🛠️",
     skills: ["Git", "Docker", "CI/CD", "Testing", "Jest", "Vite"]
   },
+  "Data Science & AI": {
+    icon: "🤖",
+    skills: ["PyTorch", "Pandas", "NumPy", "Matplotlib", "LLM", "Machine Learning"]
+  },
   "Languages": {
     icon: "💻",
     skills: ["JavaScript", "TypeScript", "Python", "Java", "C", "SQL", "Rust"]

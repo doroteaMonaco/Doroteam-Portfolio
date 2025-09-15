@@ -27,12 +27,6 @@ export const About = () => {
                   {t('about.content')}
                 </div>
               </div>
-              
-              <div className="glass-card rounded-2xl p-6 text-center">
-                <p className="text-base text-muted-foreground leading-relaxed" 
-                   dangerouslySetInnerHTML={{ __html: t('about.opportunity') }}>
-                </p>
-              </div>
             </div>
 
             {/* Right Column - Skills Grid */}
@@ -58,7 +52,7 @@ export const About = () => {
                 },
                 {
                   title: t('skills.tools'),
-                  content: "Software Engineering, Data Science, Cybersecurity",
+                  content: "Software Engineering, Data Science, Cybersecurity, AI Engineering",
                   icon: "🎯",
                   gradient: "from-brand to-brand-tertiary"
                 }

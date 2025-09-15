@@ -36,7 +36,7 @@ export const Hero = () => {
             
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight mb-6">
               <span className="block">Dorotea Monaco</span>
-              <span className="text-gradient block">{t('hero.role')}</span>
+              <span className="text-gradient block text-2xl sm:text-3xl md:text-4xl">{t('hero.role')}</span>
             </h1>
             
             <p className="text-xl md:text-2xl font-medium text-foreground mb-4 opacity-90">

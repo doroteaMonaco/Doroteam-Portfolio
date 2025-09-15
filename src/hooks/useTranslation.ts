@@ -13,8 +13,8 @@ const translations = {
     'nav.hire': 'Assumimi',
     
     // Hero Section
-    'hero.role': 'Software Engineer',
-    'hero.description': 'Specializzata nello sviluppo full-stack con React, TypeScript e tecnologie moderne. Appassionata di creare soluzioni innovative.',
+    'hero.role': 'Software Engineer, AI Engineer, Full Stack Developer',
+    'hero.description': 'Il mio obiettivo è costruire soluzioni che vadano oltre le prestazioni, creando tecnologie che fanno davvero la differenza nella vita quotidiana delle persone. Sono particolarmente motivata a sviluppare strumenti e applicazioni che migliorano l\'accessibilità e supportano le persone con disabilità, aiutandole a superare le sfide e a raggiungere l’indipendenza.',
     'hero.viewProjects': 'Vedi Progetti',
     'hero.letsConnect': 'Connettiamoci',
     'hero.downloadCV': 'Scarica CV',
@@ -23,8 +23,8 @@ const translations = {
     'about.title': 'Chi Sono',
     'about.subtitle': 'Appassionata di creare soluzioni innovative attraverso la tecnologia e l\'apprendimento continuo.',
     'about.journey': 'Il Mio Percorso',
-    'about.content': 'Sono una studentessa di Ingegneria Informatica al Politecnico di Torino con una passione per lo sviluppo software. Mi specializzo nella creazione di applicazioni web moderne utilizzando tecnologie all\'avanguardia.\n\nIl mio viaggio nella programmazione è iniziato con la curiosità e si è evoluto in un profondo apprezzamento per il codice pulito, l\'esperienza utente e le soluzioni innovative. Amo affrontare problemi complessi e trasformare le idee in realtà attraverso il codice.\n\nQuando non sto programmando, mi troverai ad esplorare nuove tecnologie, contribuire a progetti open-source, o imparare le ultime tendenze nell\'ingegneria del software.',
-    'about.opportunity': 'Sto attivamente cercando opportunità in <span class="text-gradient font-semibold">ambienti innovativi</span> dove posso contribuire a progetti di sviluppo software di impatto e continuare a crescere come professionista della tecnologia.',
+    'about.content': '🎓 Sono una studentessa di Magistrale in Ingegneria del Software al Politecnico di Torino, appassionata di tecnologia, innovazione e apprendimento continuo. La mia fascinazione risiede nell\'AI, software e tecnologie cloud, e nel loro potenziale di trasformare le vite.\n\n💡 Mi specializzo nella creazione di applicazioni web moderne utilizzando tecnologie all\'avanguardia, con un forte focus su codice pulito, esperienza utente e soluzioni innovative. Sono motivata a costruire software che va oltre le prestazioni, progettando strumenti che migliorano l\'accessibilità e danno potere agli individui, incluse le persone con disabilità.\n\n🤝 La mia esperienza di volontariato con AISM (Associazione Italiana Sclerosi Multipla) ha plasmato il mio approccio, insegnandomi a combinare competenza tecnica con empatia per sviluppare soluzioni incentrate sull\'umano che sono pratiche e significative.\n\n🌱 Mi piace affrontare problemi complessi, trasformare idee in realtà attraverso il codice ed esplorare nuove tecnologie. Quando non sto programmando, contribuisco a progetti open-source e mi tengo aggiornata sulle ultime tendenze nell\'ingegneria del software.\n\n🚀 Sto cercando opportunità in ambienti innovativi e di impatto, dove posso contribuire a progetti di sviluppo software che uniscono tecnologia e impatto sociale mentre continuo a crescere come professionista nell\'industria tech.',
+    
     
     // Skills Section
     'skills.title': 'Competenze & Expertise',
@@ -86,8 +86,8 @@ const translations = {
     'nav.hire': 'Hire Me',
     
     // Hero Section
-    'hero.role': 'Software Engineer',
-    'hero.description': 'Specialized in full-stack development with React, TypeScript, and modern technologies. Passionate about creating innovative solutions.',
+    'hero.role': 'Software Engineer, AI Engineer, Full Stack Developer',
+    'hero.description': 'My goal is to build solutions that go beyond performance, creating technologies that truly make a difference in people\'s daily lives. I am especially motivated to develop tools and applications that improve accessibility and support individuals with disabilities, helping them overcome challenges and gain independence.',
     'hero.viewProjects': 'View Projects',
     'hero.letsConnect': 'Let\'s Connect',
     'hero.downloadCV': 'Download CV',
@@ -96,8 +96,8 @@ const translations = {
     'about.title': 'About Me',
     'about.subtitle': 'Passionate about creating innovative solutions through technology and continuous learning.',
     'about.journey': 'My Journey',
-    'about.content': 'I\'m a Computer Engineering student at Politecnico di Torino with a passion for software development. I specialize in creating modern web applications using cutting-edge technologies.\n\nMy journey in programming started with curiosity and has evolved into a deep appreciation for clean code, user experience, and innovative solutions. I love tackling complex problems and turning ideas into reality through code.\n\nWhen I\'m not coding, you\'ll find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in software engineering.',
-    'about.opportunity': 'I\'m actively seeking opportunities in <span class="text-gradient font-semibold">innovative environments</span> where I can contribute to impactful software development projects and continue growing as a technology professional.',
+    'about.content': '🎓 I am a Master\'s student in Software Engineering at Politecnico di Torino, passionate about technology, innovation, and continuous learning. My fascination lies in AI, software, and cloud technologies, and their potential to transform lives.\n\n💡 I specialize in creating modern web applications using cutting-edge technologies, with a strong focus on clean code, user experience, and innovative solutions. I am motivated to build software that goes beyond performance, designing tools that improve accessibility and empower individuals, including those with disabilities.\n\n🤝 My volunteer experience with AISM (Associazione Italiana Sclerosi Multipla) has shaped my approach, teaching me to combine technical expertise with empathy to develop human-centered solutions that are practical and meaningful.\n\n🌱 I enjoy tackling complex problems, turning ideas into reality through code, and exploring new technologies. When I\'m not coding, I contribute to open-source projects and stay up-to-date with the latest trends in software engineering.\n\n🚀 I am seeking opportunities in innovative and impactful environments, where I can contribute to software development projects that merge technology with social impact while continuing to grow as a professional in the tech industry.',
+    
     
     // Skills Section
     'skills.title': 'Skills & Expertise',
