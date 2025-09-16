@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { useLanguageContext } from "@/contexts/TranslationContext";
 
 const technicalSkills = {
   "Frontend": {
@@ -24,12 +25,31 @@ const technicalSkills = {
 };
 
 const softSkills = [
-  "Problem Solving", "Team Collaboration", "Critical Thinking", "Adaptability", 
-  "Communication", "Time Management", "Attention to Detail", "Continuous Learning",
-  "Project Management", "Cross-functional Teamwork"
+  "skills.soft.communication",
+  "skills.soft.problemSolving", 
+  "skills.soft.adaptability",
+  "skills.soft.criticalThinking",
+  "skills.soft.creativity",
+  "skills.soft.timeManagement",
+  "skills.soft.projectManagement",
+  "skills.soft.teamwork"
 ];
 
 export const Skills = () => {
+  const { t } = useLanguageContext();
+  
+  // Mappa delle traduzioni per le categorie
+  const getCategoryTranslation = (category: string) => {
+    const translations: { [key: string]: string } = {
+      "Frontend": t('skills.web'),
+      "Backend": t('skills.database'),
+      "Tools & DevOps": t('skills.tools'),
+      "Data Science & AI": "Data Science & AI",
+      "Languages": t('skills.programming')
+    };
+    return translations[category] || category;
+  };
+  
   return (
     <section id="skills" className="py-20 md:py-32 relative">
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-secondary/10 rounded-full blur-3xl"></div>
@@ -37,11 +57,10 @@ export const Skills = () => {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient">Skills & Expertise</span>
+            <span className="text-gradient">{t('skills.title')}</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A comprehensive toolkit of <span className="text-brand font-semibold">modern technologies</span> and 
-            interpersonal skills honed through academic excellence and practical experience.
+            {t('skills.subtitle')}
           </p>
         </div>
         
@@ -51,7 +70,7 @@ export const Skills = () => {
             <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center">
               <span className="text-lg">💻</span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">Technical Arsenal</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground">{t('skills.programming')}</h3>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -66,7 +85,7 @@ export const Skills = () => {
                     {data.icon}
                   </div>
                   <h4 className="font-bold text-lg text-foreground group-hover:text-gradient transition-all duration-300">
-                    {category}
+                    {getCategoryTranslation(category)}
                   </h4>
                 </div>
                 
@@ -95,7 +114,7 @@ export const Skills = () => {
             <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center">
               <span className="text-lg">🤝</span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">Interpersonal Skills</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground">{t('skills.interpersonal')}</h3>
           </div>
           
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -106,7 +125,7 @@ export const Skills = () => {
                 className="text-sm px-4 py-2 rounded-full border-brand/30 text-brand bg-brand/5 hover:bg-brand hover:text-brand-foreground hover:scale-105 transition-all duration-300 cursor-default"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {skill}
+                {t(skill)}
               </Badge>
             ))}
           </div>

@@ -13,6 +13,7 @@ export const SiteHeader = () => {
     { href: "#projects", label: t('nav.projects') },
     { href: "#skills", label: t('nav.skills') },
     { href: "#about", label: t('nav.about') },
+    { href: "#volunteer", label: t('nav.volunteer') },
     { href: "#contact", label: t('nav.contact') },
   ];
 

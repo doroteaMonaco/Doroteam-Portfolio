@@ -61,20 +61,20 @@ export const Projects = () => {
     },
   ];
   return (
-    <section id="projects" className="py-20 md:py-32 relative">
-      <div className="absolute top-20 left-1/4 w-64 h-64 bg-brand/10 rounded-full blur-3xl"></div>
+    <section id="projects" className="py-12 md:py-20 lg:py-32 relative">
+      <div className="absolute top-20 left-1/4 w-48 h-48 md:w-64 md:h-64 bg-brand/10 rounded-full blur-3xl"></div>
       
-      <div className="container mx-auto px-4 relative">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
             <span className="text-gradient">{t('projects.title')}</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
             {t('projects.subtitle')}
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
           {projects.map((p, index) => (
             <a
               key={p.title}

@@ -37,51 +37,110 @@ const faqs: FAQ[] = [
   {
     id: 'about',
     question: 'Tell me about yourself',
-    answer: `Hi! I'm Dorotea Monaco, a Computer Engineering student at Politecnico di Torino. I'm passionate about building modern web applications with focus on scalable architecture and cloud solutions. I specialize in full-stack development using technologies like React, TypeScript, Node.js, and various databases.`,
-    keywords: ['about', 'who', 'yourself', 'dorotea', 'background', 'introduction'],
-    quickReplies: ['Skills', 'Projects', 'Experience']
+    answer: `Hi! I'm Dorotea Monaco, a Master's student in Software Engineering at Politecnico di Torino. I'm passionate about building solutions that go beyond performance, creating technologies that truly make a difference in people's daily lives. 
+
+I specialize in full-stack development with modern technologies like React, TypeScript, Node.js, and I'm particularly motivated to develop tools and applications that improve accessibility and support individuals with disabilities.
+
+🤝 I'm also an active volunteer with AISM (Associazione Italiana Sclerosi Multipla), which has shaped my approach to technology design, teaching me the importance of empathy and inclusivity in creating human-centered solutions.`,
+    keywords: ['about', 'who', 'yourself', 'dorotea', 'background', 'introduction', 'aism', 'volunteer'],
+    quickReplies: ['Skills', 'Projects', 'Volunteer Work']
   },
   {
     id: 'skills',
     question: 'What are your technical skills?',
     answer: `My technical stack includes:
     
-🖥️ **Frontend**: React, TypeScript, Next.js, TailwindCSS, HTML5, CSS3
-⚙️ **Backend**: Node.js, Express, Python, API development
-🗄️ **Databases**: MongoDB, Supabase
-☁️ **Cloud & DevOps**: Docker, Vercel, Git, GitHub Actions
-🛠️ **Tools**: VS Code, Postman, Linux
+🖥️ **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS
+⚙️ **Backend**: Node.js, Express, REST APIs, MySQL, Supabase
+🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis
+🤖 **Data Science & AI**: PyTorch, Pandas, NumPy, Matplotlib, LLM, Machine Learning
+🛠️ **Tools & DevOps**: Git, Docker, CI/CD, Testing, Jest, Vite
+🗣️ **Languages**: Python, C, Java, Assembly ARM
 
-I'm always eager to learn new technologies and stay updated with industry trends!`,
-    keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech'],
-    quickReplies: ['Projects', 'Experience', 'Contact']
+� **Soft Skills**: Effective Communication, Problem Solving, Adaptability, Critical Thinking, Creativity, Time Management, Project Management, Cross-functional Teamwork
+
+I'm always eager to learn new technologies and stay updated with industry trends, especially in AI and accessibility!`,
+    keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech', 'ai', 'machine learning', 'pytorch'],
+    quickReplies: ['Projects', 'Volunteer Work', 'Contact']
   },
   {
     id: 'projects',
     question: 'What projects have you worked on?',
     answer: `Here are some of my key projects:
 
-🎮 **Misfortune Tracker**: A web application for tracking gaming statistics with real-time data visualization
-🌍 **GeoControl**: A location-based management system with interactive mapping features
+🎮 **Misfortune Tracker**: A comprehensive gaming statistics application featuring real-time data visualization, user analytics, and performance tracking. Built with React and modern technologies.
 
-Both projects showcase my full-stack development skills and attention to user experience. You can view detailed information and source code in the Projects section of my portfolio.`,
-    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'misfortune', 'geocontrol'],
+🌍 **GeoControl**: Advanced location-based management system for geographical data processing, mapping, and spatial analysis. Integrates modern APIs for accurate geographical insights.
+
+💬 **Ruggine**: Modern chat application built with Rust featuring native GUI interface, developed in collaboration with Luigi Gonnella 💜. Uses WebSocket and Redis for group chats, private messaging, and friend requests.
+
+👾 **Pacman**: A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.
+
+🍳 **RecApp**: Recipe forum built with React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, and JavaScript. Currently under development with UI and social features to be implemented.
+
+Each project demonstrates my problem-solving skills and technical expertise across different technologies!`,
+    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'misfortune', 'geocontrol', 'ruggine', 'pacman', 'recapp', 'chat', 'rust'],
     quickReplies: ['View Projects', 'Skills', 'Contact']
+  },
+  {
+    id: 'volunteer',
+    question: 'Tell me about your volunteer work',
+    answer: `🤝 **AISM - Italian Multiple Sclerosis Association**
+I'm an active volunteer with AISM, where I contribute to organizing informational events, fundraising campaigns, and awareness activities in schools and companies.
+
+📚 **Activities I'm involved in**:
+• **Informational Events**: Organization and coordination of events to raise awareness about multiple sclerosis
+• **Fundraising**: Management of campaigns and initiatives to support research
+• **School Outreach**: Awareness and education activities in educational institutions  
+• **Corporate Partners**: Collaboration with companies for corporate social responsibility initiatives
+
+💡 **Skills I've developed**:
+Effective Communication, Teamwork, Leadership, Empathy, Organization, Adaptability
+
+This experience has taught me the importance of empathy and inclusivity in technological design, shaping my approach to building human-centered solutions.`,
+    keywords: ['volunteer', 'volunteering', 'aism', 'sclerosi', 'multiple', 'social', 'nonprofit', 'events', 'fundraising'],
+    quickReplies: ['About Me', 'Skills', 'Accessibility']
+  },
+  {
+    id: 'accessibility',
+    question: 'What is your approach to accessibility?',
+    answer: `♿ **Accessibility & Inclusive Design** is at the core of my development philosophy.
+
+My volunteer experience with AISM (Italian Multiple Sclerosis Association) has deeply shaped my understanding of the importance of creating technology that works for everyone, including people with disabilities.
+
+🎯 **My Focus Areas**:
+• Building applications that improve accessibility and support individuals with disabilities
+• Designing user interfaces that are intuitive and inclusive
+• Implementing technologies that help people overcome challenges and gain independence
+• Following WCAG guidelines and accessibility best practices
+
+💡 **Philosophy**: I believe technology should go beyond performance metrics - it should genuinely improve people's daily lives and create equal opportunities for everyone.
+
+This human-centered approach drives every project I work on, ensuring that solutions are not just technically excellent, but also meaningful and accessible.`,
+    keywords: ['accessibility', 'inclusive', 'disability', 'wcag', 'inclusive design', 'human-centered', 'accessibility'],
+    quickReplies: ['Volunteer Work', 'Projects', 'Contact']
   },
   {
     id: 'experience',
     question: 'What is your work experience?',
-    answer: `I'm currently a Computer Engineering student at Politecnico di Torino, where I'm building strong foundations in software engineering, algorithms, and system design. 
+    answer: `I'm currently a Master's student in Software Engineering at Politecnico di Torino, where I'm building advanced expertise in software architecture, AI technologies, and system design. 
 
-Through my studies and personal projects, I've gained hands-on experience in:
-- Full-stack web development
+🎓 **Academic Experience**:
+- Advanced software engineering principles
 - Database design and optimization
 - Cloud deployment and DevOps practices
-- Agile development methodologies
+- AI and machine learning applications
+- Accessibility-focused design
 
-I'm actively seeking internship and entry-level opportunities to apply my skills in real-world projects!`,
-    keywords: ['experience', 'work', 'job', 'internship', 'career', 'university', 'education'],
-    quickReplies: ['Contact', 'Skills', 'Availability']
+🤝 **Volunteer Experience**: 
+Active volunteer with AISM (Associazione Italiana Sclerosi Multipla), developing leadership, communication, and project management skills while contributing to meaningful social impact.
+
+💻 **Technical Experience**:
+Through my studies and personal projects, I've gained hands-on experience in full-stack development, modern web technologies, and human-centered design.
+
+I'm actively seeking opportunities to apply my skills in innovative, impactful environments!`,
+    keywords: ['experience', 'work', 'job', 'internship', 'career', 'university', 'education', 'master', 'volunteer'],
+    quickReplies: ['Contact', 'Skills', 'Volunteer Work']
   },
   {
     id: 'contact',
@@ -129,33 +188,41 @@ I'm flexible and adaptable to different working arrangements!`,
     question: 'What technologies do you use?',
     answer: `I work with modern, industry-standard technologies:
 
-🎨 **Frontend**: React, TypeScript, Next.js, TailwindCSS, Vite
-⚡ **Backend**: Node.js, Express, Python, REST APIs
-🗄️ **Databases**: PostgreSQL, MongoDB, Supabase, Firebase  
-☁️ **Cloud**: AWS, Vercel, Docker, Git/GitHub
-🛠️ **Tools**: VS Code, Figma, Postman, Linux
+🎨 **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS
+⚡ **Backend**: Node.js, Express, REST APIs, Python
+🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis
+🤖 **Data Science & AI**: PyTorch, Pandas, NumPy, Matplotlib, LLM, Machine Learning
+🛠️ **Tools & DevOps**: Git, Docker, CI/CD, Testing, Jest, Vite
+�️ **Programming Languages**: Python, C, Java, Assembly ARM
+☁️ **Cloud & Deployment**: Vercel, Supabase, Docker
 
-I stay updated with the latest trends and am always eager to learn new technologies that can improve project outcomes!`,
-    keywords: ['technologies', 'tech', 'tools', 'framework', 'library', 'database'],
-    quickReplies: ['View Projects', 'Experience', 'Skills']
+I stay updated with the latest trends in web development and AI technologies, and am always eager to learn new tools that can improve project outcomes and user accessibility!`,
+    keywords: ['technologies', 'tech', 'tools', 'framework', 'library', 'database', 'ai', 'machine learning', 'pytorch'],
+    quickReplies: ['View Projects', 'Skills', 'AI Experience']
   },
   {
     id: 'education',
     question: 'Tell me about your education',
     answer: `🎓 **Current Education**: 
-Computer Engineering at Politecnico di Torino (ongoing)
+Master's in Software Engineering at Politecnico di Torino (ongoing)
 
 📚 **Key Areas of Study**:
-• Software Engineering & Architecture
-• Algorithms and Data Structures  
-• Database Systems
-• Web Development
-• Computer Networks
-• System Programming
+• Advanced Software Engineering & Architecture
+• Artificial Intelligence and Machine Learning
+• Database Systems and Optimization
+• Full-Stack Web Development
+• Human-Computer Interaction
+• System Design and Programming
+• Cloud Computing and DevOps
 
-I complement my formal education with continuous self-learning through online courses, technical documentation, and hands-on projects.`,
-    keywords: ['education', 'university', 'degree', 'study', 'politecnico', 'torino', 'computer engineering'],
-    quickReplies: ['Skills', 'Projects', 'Experience']
+🤝 **Complementary Experience**:
+• Volunteer work with AISM developing leadership and communication skills
+• Hands-on projects applying accessibility principles and inclusive design
+• Continuous self-learning through technical documentation, courses, and open source contributions
+
+My education combines technical excellence with a human-centered approach to technology development.`,
+    keywords: ['education', 'university', 'degree', 'study', 'politecnico', 'torino', 'software engineering', 'master'],
+    quickReplies: ['Skills', 'Volunteer Work', 'Experience']
   }
 ];
 
