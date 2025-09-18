@@ -34,7 +34,7 @@ export const Projects = () => {
       metrics: "💬 Group & private chats • 👥 Friend requests • 🦀 Native Rust performance",
       image: ruggineImg,
       tech: ["Rust", "Iced", "WebSocket", "Redis", "PostgreSQL"],
-      link: "https://github.com/doroteaMonaco/Ruggine",
+      link: "https://github.com/doroteaMonaco/Ruggine-App",
       contributors: [
         {
           name: "Luigi Gonnella",
