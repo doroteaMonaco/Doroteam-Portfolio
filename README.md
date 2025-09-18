@@ -11,65 +11,52 @@
 
 ---
 
-An interactive technical portfolio developed to showcase experiences, projects, and skills in the software field.
-The goal is to provide a modern, fast, and responsive tool that works both as a professional showcase and as a frontend development exercise using current technologies.
+An interactive technical portfolio developed to showcase experiences, projects, and skills in the software field. The goal is to provide a modern, fast, and responsive tool that works both as a professional showcase and as a frontend development exercise using current technologies.
 
-🌐 Live demo: doroteamonaco.dev
+🌐 **Live demo**: [doroteamonaco.dev](https://doroteamonaco.dev)
 
-🚀 Technologies Used
+## 🚀 Technologies Used
 
-React + TypeScript → Typed components for scalability and code safety
+- **React + TypeScript** → Typed components for scalability and code safety
+- **Vite** → Fast and efficient bundler for development
+- **TailwindCSS** → Modern, responsive design with utility classes
+- **Zod** → Client-side data validation for robustness
+- **Supabase** → Serverless backend, database, and authentication
+- **Resend** → Secure contact form email handling
+- **Vercel** → Fast hosting and deployment with integrated CI/CD
 
-Vite → Fast and efficient bundler for development
+## ✨ Main Features
 
-TailwindCSS → Modern, responsive design with utility classes
+- Responsive UI optimized for both desktop and mobile devices
+- Smooth navigation across portfolio sections
+- Contact form with Zod validation and Resend email integration
+- Data persistence and authentication with Supabase
+- Fast and continuous deployment via Vercel
+- Custom domain: [doroteamonaco.dev](https://doroteamonaco.dev)
 
-Zod → Client-side data validation for robustness
-
-Supabase → Serverless backend, database, and authentication
-
-Resend → Secure contact form email handling
-
-Vercel → Fast hosting and deployment with integrated CI/CD
-
-✨ Main Features
-
-Responsive UI optimized for both desktop and mobile devices
-
-Smooth navigation across portfolio sections
-
-Contact form with Zod validation and Resend email integration
-
-Data persistence and authentication with Supabase
-
-Fast and continuous deployment via Vercel
-
-Custom domain: doroteamonaco.dev
-
-📂 Project Structure
+## 📂 Project Structure
 
 Description of main folders:
 
-public/ → contains all static assets such as images, favicon, and public files
+```
+tech-folio-path/
+├── public/           → Static assets such as images, favicon, and public files
+├── src/
+│   ├── components/   → Reusable React components
+│   ├── pages/        → Main portfolio sections (Home, About, Projects, Contact)
+│   ├── styles/       → TailwindCSS configurations and customizations
+│   ├── utils/        → Helper functions and validations (Zod schemas)
+│   ├── services/     → External integrations (Supabase, Resend, APIs)
+│   ├── App.tsx       → React application entry point
+│   └── main.tsx      → Initializes React with Vite
+└── ...
+```
 
-src/components/ → reusable React components
-
-src/pages/ → main portfolio sections (e.g., Home, About, Projects, Contact)
-
-src/styles/ → TailwindCSS configurations and customizations
-
-src/utils/ → helper functions and validations (e.g., Zod schemas)
-
-src/services/ → external integrations such as Supabase, Resend, or other APIs
-
-App.tsx → React application entry point
-
-main.tsx → initializes React with Vite
-
-🔧 Installation & Usage
+## 🔧 Installation & Usage
 
 Clone the repository and run the project locally:
 
+```bash
 # Clone the repository
 git clone https://github.com/doroteaMonaco/tech-folio-path.git
 cd tech-folio-path
@@ -79,35 +66,31 @@ npm install
 
 # Start local development server
 npm run dev
+```
 
-🤝 Contributing
+## 🤝 Contributing
 
-If you’d like to contribute to this project:
+If you'd like to contribute to this project:
 
-Fork the repository
+1. Fork the repository
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request
 
-Create a feature branch:
-
-git checkout -b feature/your-feature-name
-
-
-Commit your changes:
-
-git commit -m "Add new feature"
-
-
-Push to your branch:
-
-git push origin feature/your-feature-name
-
-
-Open a pull request
-
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
-🔗 About
+## 🔗 About
 
-Live project: tech-folio-path.vercel.app
-
+**Live project**: [tech-folio-path.vercel.app](https://tech-folio-path.vercel.app)
