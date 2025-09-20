@@ -11,75 +11,86 @@
 
 ---
 
-Un **portfolio tecnico interattivo** sviluppato per presentare esperienze, progetti e competenze in ambito software.  
-L’obiettivo è fornire uno strumento moderno, veloce e responsive, utile sia come vetrina professionale che come esercizio di sviluppo frontend con tecnologie attuali.
+An interactive technical portfolio developed to showcase experiences, projects, and skills in the software field. The goal is to provide a modern, fast, and responsive tool that works both as a professional showcase and as a frontend development exercise using current technologies.
 
-🌐 **Live demo:** [doroteamonaco.dev](https://doroteamonaco.dev)
+🌐 **Live demo**: [doroteamonaco.dev](https://doroteamonaco.dev)
 
----
+## 🚀 Technologies Used
 
-## 🚀 Tecnologie utilizzate
-- **React + TypeScript** → componenti tipizzati, scalabilità e sicurezza del codice  
-- **Vite** → bundler veloce ed efficiente per lo sviluppo  
-- **TailwindCSS** → design moderno e responsive con classi utility  
-- **Zod** → validazione dei dati lato client per maggiore robustezza  
-- **Supabase** → backend serverless, database e autenticazione  
-- **Resend** → gestione e invio sicuro di email di contatto  
-- **Vercel** → hosting e deploy veloce con CI/CD integrato  
+- **React + TypeScript** → Typed components for scalability and code safety
+- **Vite** → Fast and efficient bundler for development
+- **TailwindCSS** → Modern, responsive design with utility classes
+- **Zod** → Client-side data validation for robustness
+- **Supabase** → Serverless backend, database, and authentication
+- **Resend** → Secure contact form email handling
+- **Vercel** → Fast hosting and deployment with integrated CI/CD
 
----
+## ✨ Main Features
 
-## ✨ Caratteristiche principali
-- UI responsive e ottimizzata per dispositivi desktop e mobile  
-- Navigazione fluida tra sezioni del portfolio  
-- Form di contatto con validazione **Zod** e invio tramite **Resend**  
-- Persistenza dati e autenticazione con **Supabase**  
-- Deploy rapido e continuo su **Vercel**  
-- Dominio personalizzato: **doroteamonaco.dev**  
+- Responsive UI optimized for both desktop and mobile devices
+- Smooth navigation across portfolio sections
+- Contact form with Zod validation and Resend email integration
+- Data persistence and authentication with Supabase
+- Fast and continuous deployment via Vercel
+- Custom domain: [doroteamonaco.dev](https://doroteamonaco.dev)
 
----
+## 📂 Project Structure
 
-## 📂 Struttura del progetto
+Description of main folders:
 
+```
+tech-folio-path/
+├── public/           → Static assets such as images, favicon, and public files
+├── src/
+│   ├── components/   → Reusable React components
+│   ├── pages/        → Main portfolio sections (Home, About, Projects, Contact)
+│   ├── styles/       → TailwindCSS configurations and customizations
+│   ├── utils/        → Helper functions and validations (Zod schemas)
+│   ├── services/     → External integrations (Supabase, Resend, APIs)
+│   ├── App.tsx       → React application entry point
+│   └── main.tsx      → Initializes React with Vite
+└── ...
+```
 
-## Descrizione delle cartelle principali
+## 🔧 Installation & Usage
 
-- **public/**: contiene tutti gli asset statici come immagini, favicon e file pubblici.  
-- **src/components/**: componenti React riutilizzabili.  
-- **src/pages/**: le principali sezioni del portfolio, ad esempio Home, About, Projects, Contact.  
-- **src/styles/**: configurazioni e personalizzazioni di TailwindCSS.  
-- **src/utils/**: funzioni helper e validazioni (ad esempio usando Zod).  
-- **src/services/**: integrazioni esterne come Supabase, Resend o altre API.  
-- **App.tsx**: entry point dell’applicazione React.  
-- **main.tsx**: inizializza React con Vite.  
-
----
-
-## 🔧 Installazione e utilizzo
-
-Clona la repository ed esegui il progetto in locale:
+Clone the repository and run the project locally:
 
 ```bash
-# Clona la repository
+# Clone the repository
 git clone https://github.com/doroteaMonaco/tech-folio-path.git
 cd tech-folio-path
 
-# Installa le dipendenze
+# Install dependencies
 npm install
 
-# Avvia il server locale
+# Start local development server
 npm run dev
+```
 
-## 🤝 Contribuire
+## 🤝 Contributing
 
-Se vuoi contribuire a questo progetto:
+If you'd like to contribute to this project:
 
-1. Fai un fork della repo
-2. Crea un branch per la tua feature:
+1. Fork the repository
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request
 
-```bash
-git checkout -b feature/nome-feature
+## 📄 License
 
-git commit -m "Aggiunta nuova feature"
+This project is licensed under the MIT License.
 
-git push origin feature/nome-feature
+## 🔗 About
+
+**Live project**: [tech-folio-path.vercel.app](https://tech-folio-path.vercel.app)
