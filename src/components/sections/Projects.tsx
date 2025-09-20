@@ -4,6 +4,8 @@ import pacmanImg from "@/assets/projects/pacman.png";
 import recipeImg from "@/assets/projects/recipe.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
 const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
+// Placeholder image for Diabet Predictor - replace with actual screenshot when available
+const diabetPredictorImg = "https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
 import { Github } from "lucide-react";
@@ -58,6 +60,14 @@ export const Projects = () => {
       tech: ["React Router", "Prisma", "PostgreSQL", "Redis", "Supabase", "Vercel", "React", "JavaScript"],
       link: "https://github.com/doroteaMonaco/RecApp",
       isUnderConstruction: true,
+    },
+    {
+      title: t('projects.diabetpredictor.title'),
+      description: t('projects.diabetpredictor.description'),
+      metrics: "🤖 ML algorithms • 📊 Data visualization • 🎯 High accuracy • 🔬 Medical analytics",
+      image: diabetPredictorImg,
+      tech: ["Python", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn"],
+      link: "https://github.com/doroteaMonaco/DiabetPredictor",
     },
   ];
   return (

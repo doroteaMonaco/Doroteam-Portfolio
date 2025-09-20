@@ -60,6 +60,8 @@ const translations = {
   'projects.pacman.description': 'Un clone di Pacman sviluppato per la scheda Landtiger LPC1768, programmato in Assembly ARM. Gameplay classico, grafica retrò e intelligenza artificiale per i fantasmi.',
   'projects.recapp.title': 'RecApp',
   'projects.recapp.description': 'Forum di ricette sviluppato con React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, React e JavaScript. ⚠️ Progetto ancora in fase di sviluppo: l\'interfaccia utente e le funzionalità social devono essere implementate.',
+  'projects.diabetpredictor.title': 'Diabet Predictor',
+  'projects.diabetpredictor.description': 'Sistema di previsione del diabete basato su machine learning che utilizza algoritmi avanzati per analizzare dati medici e prevedere il rischio di diabete. Sviluppato con Python, scikit-learn, pandas e visualizzazioni interattive.',
     
     // Volunteer Section
     'volunteer.title': 'Volontariato',
@@ -176,6 +178,8 @@ const translations = {
   'projects.pacman.description': 'A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.',
   'projects.recapp.title': 'RecApp',
   'projects.recapp.description': 'Recipe forum built with React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, React and JavaScript. ⚠️ Project under active development: UI and social features are still to be implemented.',
+  'projects.diabetpredictor.title': 'Diabet Predictor',
+  'projects.diabetpredictor.description': 'Machine learning-based diabetes prediction system that uses advanced algorithms to analyze medical data and predict diabetes risk. Developed with Python, scikit-learn, pandas, and interactive visualizations.',
     
     // Volunteer Section
     'volunteer.title': 'Volunteer Work',

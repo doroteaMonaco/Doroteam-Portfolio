@@ -53,14 +53,14 @@ I specialize in full-stack development with modern technologies like React, Type
 🖥️ **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS
 ⚙️ **Backend**: Node.js, Express, REST APIs, MySQL, Supabase
 🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis
-🤖 **Data Science & AI**: PyTorch, Pandas, NumPy, Matplotlib, LLM, Machine Learning
+🤖 **Data Science & AI**: PyTorch, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Machine Learning
 🛠️ **Tools & DevOps**: Git, Docker, CI/CD, Testing, Jest, Vite
 🗣️ **Languages**: Python, C, Java, Assembly ARM
 
 � **Soft Skills**: Effective Communication, Problem Solving, Adaptability, Critical Thinking, Creativity, Time Management, Project Management, Cross-functional Teamwork
 
 I'm always eager to learn new technologies and stay updated with industry trends, especially in AI and accessibility!`,
-    keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech', 'ai', 'machine learning', 'pytorch'],
+    keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech', 'ai', 'machine learning', 'pytorch', 'scikit-learn', 'pandas', 'numpy', 'matplotlib', 'seaborn'],
     quickReplies: ['Projects', 'Volunteer Work', 'Contact']
   },
   {
@@ -78,8 +78,10 @@ I'm always eager to learn new technologies and stay updated with industry trends
 
 🍳 **RecApp**: Recipe forum built with React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, and JavaScript. Currently under development with UI and social features to be implemented.
 
+🤖 **Diabet Predictor**: Machine learning-based diabetes prediction system that uses advanced algorithms to analyze medical data and predict diabetes risk. Developed with Python, scikit-learn, pandas, and interactive visualizations.
+
 Each project demonstrates my problem-solving skills and technical expertise across different technologies!`,
-    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'misfortune', 'geocontrol', 'ruggine', 'pacman', 'recapp', 'chat', 'rust'],
+    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'misfortune', 'geocontrol', 'ruggine', 'pacman', 'recapp', 'diabet', 'predictor', 'machine learning', 'ml', 'chat', 'rust'],
     quickReplies: ['View Projects', 'Skills', 'Contact']
   },
   {
